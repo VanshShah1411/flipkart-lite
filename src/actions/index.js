@@ -3,10 +3,43 @@ const getProducts = () => {
     fetch("https://fakestoreapi.com/products")
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         dispatch({ type: "GET_PRODUCTS", payload: data });
       });
   };
 };
 
-export { getProducts };
+const addToCart = (id) => {
+  return {
+    type: "ADD_TO_CART",
+    payload: id,
+  };
+};
+
+const deleteCartItem = (id) => {
+  return {
+    type: "DELETE_CART_ITEM",
+    payload: id,
+  };
+};
+
+const increaseCartItem = (id) => {
+  return {
+    type: "INC_CART_ITEM",
+    payload: id,
+  };
+};
+
+const decreaseCartItem = (id) => {
+  return {
+    type: "DEC_CART_ITEM",
+    payload: id,
+  };
+};
+
+export {
+  getProducts,
+  addToCart,
+  deleteCartItem,
+  increaseCartItem,
+  decreaseCartItem,
+};

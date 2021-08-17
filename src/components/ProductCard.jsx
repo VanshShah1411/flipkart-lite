@@ -1,4 +1,7 @@
 import React from "react";
+// Buttons
+import BuyNow from "./Buttons/BuyNow";
+import AddToCart from "./Buttons/AddToCart";
 
 // material ui
 import {
@@ -49,12 +52,8 @@ const ProductCard = ({ product, ind }) => {
       </Link>
       {/* Buttons */}
       <CardActions>
-        <Button size="small" color="primary">
-          Buy Now
-        </Button>
-        <Button size="small" color="primary">
-          Add to Cart
-        </Button>
+        <BuyNow id={product.id} variant="contained" size="small" />
+        <AddToCart id={product.id} variant="contained" size="small" />
       </CardActions>
     </Card>
   );

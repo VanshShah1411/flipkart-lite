@@ -54,3 +54,10 @@
 ### store
 
 => redux thunk
+
+### work Done
+
+-> getProducts
+-> addToCart
+-> deleteCartItem
+-> updateQuantity
