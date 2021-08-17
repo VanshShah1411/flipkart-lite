@@ -1,19 +1,13 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 // Redux
-import { useDispatch, useSelector } from "react-redux";
-import { getProducts } from "../actions/index";
+import { useSelector } from "react-redux";
 
 // Material UI
 import ProductCard from "./ProductCard";
 
 const Home = () => {
   const products = useSelector((state) => state.products);
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(getProducts());
-  }, []);
 
   return (
     <div>
