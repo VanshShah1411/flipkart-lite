@@ -4,11 +4,11 @@ import React from "react";
 import AddToCart from "./Buttons/AddToCart";
 import BuyNow from "./Buttons/BuyNow";
 
-import {
-  deleteCartItem,
-  increaseCartItem,
-  decreaseCartItem,
-} from "../actions/index";
+// import {
+//   deleteCartItem,
+//   increaseCartItem,
+//   decreaseCartItem,
+// } from "../actions/index";
 
 //redux
 import { useSelector, useDispatch } from "react-redux";
@@ -20,8 +20,8 @@ const ProductDetail = () => {
   const products = useSelector((state) => state.products);
 
   // need to make cart component
-  const cart = useSelector((state) => state.cart);
-  console.log(cart);
+  // const cart = useSelector((state) => state.cart);
+  // console.log(cart);
 
   const dispatch = useDispatch();
 
@@ -34,9 +34,9 @@ const ProductDetail = () => {
       <div style={{ display: "flex", justifyContent: "space-evenly" }}>
         <BuyNow id={id} variant="contained" size="large" />
         <AddToCart id={id} variant="contained" size="large" />
-        <button onClick={() => dispatch(deleteCartItem(id))}>Delete</button>
+        {/* <button onClick={() => dispatch(deleteCartItem(id))}>Delete</button>
         <button onClick={() => dispatch(increaseCartItem(id))}>+</button>
-        <button onClick={() => dispatch(decreaseCartItem(id))}>-</button>
+        <button onClick={() => dispatch(decreaseCartItem(id))}>-</button> */}
       </div>
     </div>
   );
