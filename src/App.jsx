@@ -9,6 +9,7 @@ function App() {
   return (
     <div className="App">
       <Switch>
+        {/* Kirua OP */}
         <Route exact path="/product/:id" component={ProductDetail} />
         <Route exact path="/" component={Home} />
       </Switch>
