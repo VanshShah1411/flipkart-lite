@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getProducts } from "../actions/index";
 
 const Home = () => {
-  const { products } = useSelector((state) => state.products);
+  const  products  = useSelector((state) => state.products);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -14,9 +14,9 @@ const Home = () => {
   return (
     <div>
       <h1>Home Page</h1>
-      {/* {products.map((product) => (
+      {products.map((product) => (
         <h1>{product.id}</h1>
-      ))} */}
+      ))}
     </div>
   );
 };
