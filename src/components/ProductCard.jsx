@@ -1,61 +1,26 @@
 import React from "react";
 // Buttons
-import BuyNow from "./Buttons/BuyNow";
 import AddToCart from "./Buttons/AddToCart";
 
-// material ui
-import {
-  makeStyles,
-  Card,
-  CardActionArea,
-  CardActions,
-  CardContent,
-  CardMedia,
-  Button,
-} from "@material-ui/core";
 import { Link } from "react-router-dom";
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    maxWidth: 345,
-  },
-  media: {
-    height: 240,
-    width: 340,
-    objectFit: "contain",
-  },
-}));
-
 const ProductCard = ({ product, ind }) => {
-  const classes = useStyles();
   return (
-    <Card
-      className={classes.root}
-      style={{ marginTop: "2rem", backgroundColor: "#424242" }}
+    <Link
+      key={product.id}
+      to={`/product/${product.id}`}
+      className="group shadow-xl"
     >
-      {/* Link  */}
-      <Link to={`/product/${product.id}`}>
-        <CardActionArea style={{ color: "#fff" }}>
-          <CardMedia
-            className={classes.media}
-            component="img"
-            alt="Contemplative Reptile"
-            height="140"
-            image={product.image}
-            title={product.title}
-          />
-          <CardContent>
-            <h5>{product.title.slice(0, 20) + "..."}</h5>
-            <p className="mb-0">Price: ₹ {product.price * 1000}</p>
-          </CardContent>
-        </CardActionArea>
-      </Link>
-      {/* Buttons */}
-      <CardActions>
-        <BuyNow id={product.id} variant="contained" size="small" />
-        <AddToCart id={product.id} variant="contained" size="small" />
-      </CardActions>
-    </Card>
+      <div className="p-4 w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-5 xl:aspect-h-4">
+        <img
+          src={product.image}
+          alt={product.title}
+          className="w-full h-full object-center object-contain group-hover:opacity-75"
+        />
+      </div>
+      <h3 className="mt-4 text-sm text-gray-700">{product.title}</h3>
+      <p className="mt-1 text-lg font-medium text-gray-900">${product.price}</p>
+    </Link>
   );
 };
 

@@ -1,23 +1,20 @@
 import React from "react";
-import { Button } from "@material-ui/core";
 import { useSelector, useDispatch } from "react-redux";
 import { addToCart } from "../../actions/index";
 
-const AddToCart = ({ id, size, variant }) => {
+const AddToCart = ({ id }) => {
   // const cart = useSelector((state) => state.cart);
   const dispatch = useDispatch();
 
   // console.log(cart);
 
   return (
-    <Button
-      variant={variant}
-      size={size}
-      color="primary"
+    <button
+      class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded"
       onClick={() => dispatch(addToCart(id))}
     >
       Add to Cart
-    </Button>
+    </button>
   );
 };
 
