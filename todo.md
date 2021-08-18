@@ -66,3 +66,10 @@
 -> deleteCartItem
 -> updateQuantity
 -> showCart
+-> getTotal
+
+### remaining
+
+-> cart page
+-> orders complete
+-> local storage
