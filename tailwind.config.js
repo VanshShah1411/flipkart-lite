@@ -13,6 +13,7 @@ module.exports = {
       colors: {
         orange: colors.orange,
       },
+      padding: ["hover"],
     },
   },
 };

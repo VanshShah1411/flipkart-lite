@@ -11,10 +11,14 @@ import { useParams } from "react-router-dom";
 
 const ProductDetail = () => {
   const products = useSelector((state) => state.products);
+  console.log(products);
+  if (products.length === 0) {
+    return <div>Loading...</div>;
+  }
 
   const { id } = useParams();
+  console.log(id);
   const currentProduct = products.find((el) => el.id === +id);
-
   return (
     <section className="text-gray-600 body-font overflow-hidden">
       <div className="container px-5 pt-10">
@@ -48,7 +52,9 @@ const ProductDetail = () => {
               </span>
             </div>
             <p className="leading-relaxed mt-7">{currentProduct.description}</p>
-            <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
+
+            {/* Commented the sizing part */}
+            {/* <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
               <div className="flex items-center">
                 <span className="mr-3">Size</span>
                 <div className="relative">
@@ -73,7 +79,7 @@ const ProductDetail = () => {
                   </span>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="flex mb-2">
               <span className="title-font font-medium text-2xl text-gray-900">
                 ${currentProduct.price}
