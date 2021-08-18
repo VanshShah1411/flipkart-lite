@@ -36,10 +36,25 @@ const decreaseCartItem = (id) => {
   };
 };
 
+const getTotal = (cart) => {
+  return {
+    type: "GET_TOTAL",
+    payload: cart,
+  };
+};
+
+const toggleCart = () => {
+  return {
+    type: "TOGGLE_CART",
+  };
+};
+
 export {
   getProducts,
   addToCart,
   deleteCartItem,
   increaseCartItem,
   decreaseCartItem,
+  getTotal,
+  toggleCart,
 };
