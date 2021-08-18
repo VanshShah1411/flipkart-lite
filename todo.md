@@ -24,6 +24,8 @@
 => addToCart ( object )
 => deleteCartItem (id)
 => updateQuantity (id, quantity)
+=> getSubTotal
+=> getTotal
 --- cart ---
 
 --- orders ---
@@ -44,6 +46,8 @@
 => addToCart (id | object -> array) (array -> local storage)
 => deleteCartItem (id -> array) (array -> local storage)
 => updateQuantity (id ) (array -> local storage)
+=> getSubTotal
+=> getTotal
 --- cart ---
 
 --- orders ---
@@ -61,3 +65,4 @@
 -> addToCart
 -> deleteCartItem
 -> updateQuantity
+-> showCart

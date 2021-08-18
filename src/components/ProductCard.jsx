@@ -9,7 +9,7 @@ const ProductCard = ({ product }) => {
     <Link
       key={product.id}
       to={`/product/${product.id}`}
-      className="group shadow-xl"
+      className="group shadow-lg"
     >
       <div className="p-4 w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-5 xl:aspect-h-4">
         <img
@@ -18,7 +18,7 @@ const ProductCard = ({ product }) => {
           className="w-full h-full object-center object-contain group-hover:opacity-75"
         />
       </div>
-      <h3 className="mt-4 ml-2 text-sm text-gray-700">{product.title}</h3>
+      <h3 className="mt-4 ml-2 text-lg text-gray-900">{product.title}</h3>
       <p className="mt-1 ml-2 text-lg font-medium text-gray-900">
         ${product.price}
       </p>

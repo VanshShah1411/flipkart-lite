@@ -15,9 +15,8 @@ const cartReducer = (state = [], action) => {
 
     case "INC_CART_ITEM":
       const item1 = state.find((el) => el.id === action.payload);
-      if (item1.qty < 5) {
-        item1.qty += 1;
-      }
+      item1.qty += 1;
+
       return [...state];
 
     case "DEC_CART_ITEM":

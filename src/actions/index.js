@@ -36,10 +36,10 @@ const decreaseCartItem = (id) => {
   };
 };
 
-const getTotal = (cart) => {
+const updateTotal = (amount) => {
   return {
-    type: "GET_TOTAL",
-    payload: cart,
+    type: "UPDATE_TOTAL",
+    payload: amount,
   };
 };
 
@@ -55,6 +55,6 @@ export {
   deleteCartItem,
   increaseCartItem,
   decreaseCartItem,
-  getTotal,
+  updateTotal,
   toggleCart,
 };
