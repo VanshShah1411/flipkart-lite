@@ -22,14 +22,21 @@ const Navbar = () => {
           <span className="ml-3 text-xl">FlipCart Lite</span>
         </Link>
         <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
-          <a className="mr-5 hover:text-gray-900 cursor-pointer ">First Link</a>
-          <a className="mr-5 hover:text-gray-900 cursor-pointer ">
+          <Link
+            to="/checkout"
+            className="mr-5 hover:text-gray-900 cursor-pointer "
+          >
+            Checkout
+          </Link>
+          <Link className="mr-5 hover:text-gray-900 cursor-pointer ">
             Second Link
-          </a>
-          <a className="mr-5 hover:text-gray-900 cursor-pointer ">Third Link</a>
-          <a className="mr-5 hover:text-gray-900 cursor-pointer ">
+          </Link>
+          <Link className="mr-5 hover:text-gray-900 cursor-pointer ">
+            Third Link
+          </Link>
+          <Link className="mr-5 hover:text-gray-900 cursor-pointer ">
             Fourth Link
-          </a>
+          </Link>
         </nav>
         <button
           className="inline-flex items-center bg-gray-100 border-0 py-2 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"

@@ -49,6 +49,13 @@ const toggleCart = () => {
   };
 };
 
+const placeOrder = (obj) => {
+  return {
+    type: "PLACE_ORDER",
+    payload: obj,
+  };
+};
+
 export {
   getProducts,
   addToCart,
@@ -57,4 +64,5 @@ export {
   decreaseCartItem,
   updateTotal,
   toggleCart,
+  placeOrder,
 };

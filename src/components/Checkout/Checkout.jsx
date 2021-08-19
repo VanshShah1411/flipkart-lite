@@ -1,18 +1,28 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import CheckoutItem from "./CheckoutItem";
+import ConfirmModal from "./ConfirmModal";
 
 const Checkout = () => {
   const [address, setAddress] = useState("");
+  const [open, setOpen] = useState(false);
+
   const cart = useSelector((state) => state.cart);
   const total = useSelector((state) => state.total);
 
   const shipping = 2.0;
   const tax = total * 0.06;
 
+  const handleOpen = () => {
+    if (address) {
+      setOpen(!open);
+    }
+  };
+
   if (!cart.length) {
     return <div>No items in cart</div>;
   }
+
   return (
     <div className="flex sm:flex-col lg:flex-row justify-between sm:items-center lg:items-start px-10">
       {/* Cart Items Container */}
@@ -65,10 +75,12 @@ const Checkout = () => {
         <button
           to="/checkout"
           className="w-full my-5 px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+          onClick={handleOpen}
         >
           Place Order
         </button>
       </div>
+      <ConfirmModal open={open} setOpen={setOpen} address={address} />
     </div>
   );
 };
