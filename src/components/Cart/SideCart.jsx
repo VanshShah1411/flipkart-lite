@@ -105,6 +105,7 @@ const SideCart = () => {
                       <Link
                         to="/checkout"
                         className="flex justify-center items-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+                        onClick={() => dispatch(toggleCart())}
                       >
                         Checkout
                       </Link>
@@ -112,14 +113,15 @@ const SideCart = () => {
                     <div className="mt-6 flex justify-center text-sm text-center text-gray-500">
                       <p>
                         or{" "}
-                        <button
+                        <Link
+                          to="/"
                           type="button"
                           className="text-indigo-600 font-medium hover:text-indigo-500"
                           onClick={() => dispatch(toggleCart())}
                         >
                           Continue Shopping
                           <span aria-hidden="true"> &rarr;</span>
-                        </button>
+                        </Link>
                       </p>
                     </div>
                   </div>

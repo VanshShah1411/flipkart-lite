@@ -17,7 +17,7 @@ const CartItem = ({ item, qty, price }) => {
         <img
           src={item.image}
           alt={item.title}
-          className="w-full h-full object-center object-cover"
+          className="w-full h-full object-center object-contain"
         />
       </div>
 

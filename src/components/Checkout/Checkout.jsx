@@ -16,7 +16,7 @@ const Checkout = () => {
   return (
     <div className="flex sm:flex-col lg:flex-row justify-between sm:items-center lg:items-start px-10">
       {/* Cart Items Container */}
-      <div className="w-full p-2">
+      <div className="w-full overflow-y-auto px-2 cart-container">
         {/* Cart Items  */}
         {cart.map((item) => (
           <CheckoutItem id={item.id} qty={item.qty} key={item.id} />
@@ -24,7 +24,7 @@ const Checkout = () => {
       </div>
 
       {/* Order Details */}
-      <div className="container h-full rounded-lg bg-gray-200 p-4">
+      <div className="container h-full rounded-lg bg-gray-200 p-4 mx-4 lg:max-w-lg">
         <h2 className="text-lg font-bold text-gray-900 pb-5">Order Summary</h2>
         <h2 className="w-full flex justify-between text-md font-medium text-gray-500 py-2 border-b-2 border-gray-200">
           Subtotal{" "}
