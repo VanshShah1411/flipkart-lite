@@ -5,8 +5,19 @@ import { Fragment, useRef, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { ExclamationIcon } from "@heroicons/react/outline";
 
-const ConfirmModal = ({ open, setOpen, address }) => {
+// Redux
+import { useDispatch } from "react-redux";
+import { placeOrder, resetTotal, clearCart } from "../../actions/index";
+
+const ConfirmModal = ({ open, setOpen, address, cart, total }) => {
   const cancelButtonRef = useRef(null);
+  const dispatch = useDispatch();
+  const handleConfirm = () => {
+    dispatch(placeOrder({ cart, address, total }));
+    dispatch(resetTotal(0));
+    dispatch(clearCart());
+    setOpen(false);
+  };
 
   return (
     <Transition.Root show={open} as={Fragment}>
@@ -75,7 +86,7 @@ const ConfirmModal = ({ open, setOpen, address }) => {
                 <button
                   type="button"
                   className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-blue-600 text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:ml-3 sm:w-auto sm:text-sm"
-                  onClick={() => setOpen(false)}
+                  onClick={() => handleConfirm()}
                 >
                   Confirm
                 </button>

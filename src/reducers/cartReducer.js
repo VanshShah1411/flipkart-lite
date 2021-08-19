@@ -1,33 +1,53 @@
-const cartReducer = (state = [], action) => {
+// const setLocalStorage = (cart) => {
+//   localStorage.setItem("cart", JSON.stringify(cart));
+// };
+
+// let cartData = localStorage.getItem("cart");
+// let initialState = cartData ? JSON.parse(cartData) : [];
+
+import { setLocalStorage, getLocalStorage } from "../utils.js";
+
+const deleteItem = (cart, id) => {
+  return cart.filter((el) => el.id !== id);
+};
+
+const cartReducer = (state = getLocalStorage("cart", []), action) => {
+  let newState = [...state];
+  let item = newState.find((el) => el.id === action.payload);
+
   switch (action.type) {
+    case "CLEAR_CART":
+      setLocalStorage("cart", []);
+      return [];
+
     case "ADD_TO_CART":
-      const newState = [...state];
-      const item = state.find((el) => el.id === action.payload);
       if (!item) {
         newState.push({ id: action.payload, qty: 1 });
       } else if (item && item.qty < 5) {
         item.qty += 1;
       }
+      setLocalStorage("cart", newState);
       return newState;
 
     case "DELETE_CART_ITEM":
-      return [...state].filter((el) => el.id !== action.payload);
+      newState = deleteItem(state, action.payload);
+      setLocalStorage("cart", newState);
+      return newState;
 
     case "INC_CART_ITEM":
-      const item1 = state.find((el) => el.id === action.payload);
-      item1.qty += 1;
-
-      return [...state];
+      item.qty += 1;
+      setLocalStorage("cart", newState);
+      return newState;
 
     case "DEC_CART_ITEM":
-      const item2 = state.find((el) => el.id === action.payload);
-      if (item2.qty > 0) {
-        item2.qty -= 1;
+      if (item.qty > 0) {
+        item.qty -= 1;
       }
-      if (item2.qty === 0) {
-        return [...state].filter((el) => el.id !== action.payload);
+      if (item.qty === 0) {
+        newState = deleteItem(state, action.payload);
       }
-      return [...state];
+      setLocalStorage("cart", newState);
+      return newState;
 
     default:
       return state;

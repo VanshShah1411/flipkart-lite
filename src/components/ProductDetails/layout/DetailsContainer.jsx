@@ -52,7 +52,7 @@ const DetailsContainer = ({ currentProduct }) => {
             <button className="w-full py-3 hover:bg-gray-200">+</button>
           </div>
           <button
-            className="w-4/6 ml-10 text-white text-center bg-black hover:bg-gray-900 flex justify-center items-center"
+            className="w-4/6 ml-10 text-white text-center rounded-sm shadow-sm bg-indigo-600 hover:bg-indigo-700 flex justify-center items-center"
             onClick={() => {
               dispatch(addToCart(currentProduct.id));
               dispatch(updateTotal(currentProduct.price));

@@ -12,15 +12,15 @@ const CheckoutItem = ({ id, qty }) => {
   const item = products.find((el) => el.id === id);
 
   return (
-    <div className="p-5 h-2/5 flex border mb-2">
-      <img className="w-40 h-full rounded-md border" src={item.image} />
+    <div className="p-5 lg:h-2/5 flex items-center flex-col lg:flex-row lg:items-start border mb-2">
+      <img className="w-40 p-4 h-full rounded-md border" src={item.image} />
       <div className="w-full flex flex-col p-4 justify-between">
         <div className="w-full flex justify-between">
           <div>
             <Link to={`/product/${id}`} className="font-medium text-gray-600 ">
               {item.title.slice(0, 20) + "..."}
             </Link>
-            <h2 className="font-medium text-700">${item.price}</h2>
+            <h2 className="font-medium text-700">${item.price * qty}</h2>
           </div>
           <div className="font-medium text-gray-900">
             Quantity: <span className="font-semibold text-gray-700">{qty}</span>

@@ -49,6 +49,17 @@ const toggleCart = () => {
   };
 };
 
+const clearCart = () => {
+  return {
+    type: "CLEAR_CART",
+  };
+};
+const resetTotal = () => {
+  return {
+    type: "RESET_TOTAL",
+  };
+};
+
 const placeOrder = (obj) => {
   return {
     type: "PLACE_ORDER",
@@ -65,4 +76,6 @@ export {
   updateTotal,
   toggleCart,
   placeOrder,
+  clearCart,
+  resetTotal,
 };

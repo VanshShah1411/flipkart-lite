@@ -25,7 +25,7 @@ const CartItem = ({ item, qty, price }) => {
         <div>
           <div className="flex justify-between text-base font-medium text-gray-900">
             <h3 className="text-sm">{item.title}</h3>
-            <p className="ml-4">${(price * qty).toFixed(2)}</p>
+            <p className="ml-4">${price * qty}</p>
           </div>
         </div>
         <div className="flex-1 flex items-end justify-between text-sm">

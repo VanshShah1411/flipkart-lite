@@ -28,13 +28,13 @@ const Navbar = () => {
           >
             Checkout
           </Link>
-          <Link className="mr-5 hover:text-gray-900 cursor-pointer ">
+          <Link to="./#" className="mr-5 hover:text-gray-900 cursor-pointer ">
             Second Link
           </Link>
-          <Link className="mr-5 hover:text-gray-900 cursor-pointer ">
+          <Link to="./#" className="mr-5 hover:text-gray-900 cursor-pointer ">
             Third Link
           </Link>
-          <Link className="mr-5 hover:text-gray-900 cursor-pointer ">
+          <Link to="./#" className="mr-5 hover:text-gray-900 cursor-pointer ">
             Fourth Link
           </Link>
         </nav>

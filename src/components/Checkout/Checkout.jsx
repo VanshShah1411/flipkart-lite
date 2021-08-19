@@ -7,11 +7,13 @@ const Checkout = () => {
   const [address, setAddress] = useState("");
   const [open, setOpen] = useState(false);
 
+  const products = useSelector((state) => state.products);
   const cart = useSelector((state) => state.cart);
-  const total = useSelector((state) => state.total);
+  const subtotal = useSelector((state) => state.total);
 
   const shipping = 2.0;
-  const tax = total * 0.06;
+  const tax = subtotal * 0.06;
+  const total = subtotal + shipping + tax;
 
   const handleOpen = () => {
     if (address) {
@@ -20,21 +22,32 @@ const Checkout = () => {
   };
 
   if (!cart.length) {
+    // When nothing to show, render a beautiful 404 type page
     return <div>No items in cart</div>;
   }
 
   return (
-    <div className="flex sm:flex-col lg:flex-row justify-between sm:items-center lg:items-start px-10">
+    <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start px-10">
       {/* Cart Items Container */}
-      <div className="w-full overflow-y-auto px-2 cart-container">
+      <div className="w-full lg:overflow-y-auto px-2 my-2 cart-container">
         {/* Cart Items  */}
-        {cart.map((item) => (
-          <CheckoutItem id={item.id} qty={item.qty} key={item.id} />
-        ))}
+        {products.length ? (
+          !cart.length ? (
+            <div>
+              <h1>Nothing to show</h1>
+            </div>
+          ) : (
+            cart.map((item) => (
+              <CheckoutItem id={item.id} qty={item.qty} key={item.id} />
+            ))
+          )
+        ) : (
+          ""
+        )}
       </div>
 
       {/* Order Details */}
-      <div className="container h-full rounded-lg bg-gray-200 p-4 mx-4 lg:max-w-lg">
+      <div className="container h-full rounded-lg bg-gray-200 p-4 mx-4 my-2 lg:max-w-lg">
         <h2 className="text-lg font-bold text-gray-900 pb-5">Order Summary</h2>
         <h2 className="w-full flex justify-between text-md font-medium text-gray-500 py-2 border-b-2 border-gray-200">
           Subtotal{" "}
@@ -53,7 +66,7 @@ const Checkout = () => {
           <span className="font-semibold text-gray-900">${tax.toFixed(2)}</span>
         </h2>
         <h2 className="w-full flex justify-between text-xl font-semibold text-gray-900 py-2 border-b-2 border-gray-200">
-          Order Total <span>${(total + tax + shipping).toFixed(2)}</span>
+          Order Total <span>${total.toFixed(2)}</span>
         </h2>
         <div className="mt-5 col-span-6 sm:col-span-3">
           <label
@@ -80,7 +93,13 @@ const Checkout = () => {
           Place Order
         </button>
       </div>
-      <ConfirmModal open={open} setOpen={setOpen} address={address} />
+      <ConfirmModal
+        cart={cart}
+        open={open}
+        setOpen={setOpen}
+        address={address}
+        total={total}
+      />
     </div>
   );
 };

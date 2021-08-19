@@ -66,22 +66,23 @@
 -> divide detail page into components - done
 -> fetch data in detail page - done
 -> Footer - done
+-> Responsiveness of checkout (done)
 -> (smooth animation in dropdown)
+-> orders reducers
+-> store into local storage
 
 ### remaining
-
--> store into local storage
--> Home page
 -> orders page / place order (actual design)
 -> api
 -> smooth transitions
 
 ### Kirua Todo
 
--> Responsiveness of checkout
--> quantity increase in detail page
+-> When nothing to show, render a beautiful 404 type page
+-> Home page
+-> quantity increase in detail page 
 
 ### Sidd Todo
 
--> orders reducers
+-> Divide checkout section into Components 
 -> orders page / place order (basic structure)

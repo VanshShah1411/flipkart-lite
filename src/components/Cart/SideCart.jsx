@@ -75,19 +75,29 @@ const SideCart = () => {
                           role="list"
                           className="-my-6 divide-y divide-gray-200"
                         >
-                          {cart.map((cartItem) => {
-                            const item = products.find(
-                              (el) => el.id === cartItem.id
-                            );
-                            return (
-                              <CartItem
-                                item={item}
-                                price={item.price}
-                                key={item.id}
-                                qty={cartItem.qty}
-                              />
-                            );
-                          })}
+                          {products.length ? (
+                            !cart.length ? (
+                              <div>
+                                <h1>Nothing to show</h1>
+                              </div>
+                            ) : (
+                              cart.map((cartItem) => {
+                                const item = products.find(
+                                  (el) => el.id === +cartItem.id
+                                );
+                                return (
+                                  <CartItem
+                                    item={item}
+                                    price={item.price}
+                                    key={item.id}
+                                    qty={cartItem.qty}
+                                  />
+                                );
+                              })
+                            )
+                          ) : (
+                            ""
+                          )}
                         </ul>
                       </div>
                     </div>
@@ -96,7 +106,7 @@ const SideCart = () => {
                   <div className="border-t border-gray-200 py-6 px-4 sm:px-6">
                     <div className="flex justify-between text-base font-medium text-gray-900">
                       <p>Subtotal</p>
-                      <p>${total.toFixed(2)}</p>
+                      <p>${total}</p>
                     </div>
                     <p className="mt-0.5 text-sm text-gray-500">
                       Shipping and taxes calculated at checkout.
