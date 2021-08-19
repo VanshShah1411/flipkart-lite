@@ -104,7 +104,14 @@ const ProductDetailsNew = () => {
                 <button className="w-full text-center">0</button>
                 <button className="w-full py-3 hover:bg-gray-500">+</button>
               </div>
-              <button className="w-4/6 ml-10 text-white text-center bg-black hover:bg-gray-900">
+              <button
+                className="w-4/6 ml-10 text-white text-center bg-black hover:bg-gray-900"
+                onClick={() => {
+                  dispatch(addToCart(id));
+                  dispatch(updateTotal(currProduct.price));
+                  dispatch(toggleCart());
+                }}
+              >
                 Add to cart
               </button>
             </div>
