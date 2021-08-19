@@ -77,5 +77,5 @@
 
 -> divide detail page into components - done
 -> fetch data in detail page - done
--> Footer - working on it
+-> Footer - done
 -> (smooth animation in dropdown)
