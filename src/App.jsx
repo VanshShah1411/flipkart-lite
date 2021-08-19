@@ -9,7 +9,7 @@ import { getProducts } from "./actions/index";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import SideCart from "./components/Cart/SideCart";
-import ProductDetailsNew from "./components/ProductDetailsNew";
+import ProductDetailsNew from "./components/ProductDetails/ProductDetailsNew";
 import Checkout from "./components/Checkout/Checkout";
 
 function App() {
