@@ -1,19 +1,19 @@
 import React from "react";
 import { XIcon } from "@heroicons/react/outline";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { deleteCartItem, updateTotal } from "../../actions";
 
 const CheckoutItem = ({ id, qty }) => {
   const products = useSelector((state) => state.products);
 
+  const dispatch = useDispatch();
+
   const item = products.find((el) => el.id === id);
 
   return (
-    <div className="p-5 h-2/5 flex border ">
-      <img
-        className="w-40 h-full rounded-md border"
-        src="https://fabrx.co/preview/ui-kit-pro-v3/assets/images/placeholders/placeholder-125.png"
-      />
+    <div className="p-5 h-2/5 flex border mb-2">
+      <img className="w-40 h-full rounded-md border" src={item.image} />
       <div className="w-full flex flex-col p-4 justify-between">
         <div className="w-full flex justify-between">
           <div>
@@ -26,7 +26,14 @@ const CheckoutItem = ({ id, qty }) => {
             Quantity: <span className="font-semibold text-gray-700">{qty}</span>
           </div>
           <div>
-            <button type="button" className="p-0 text-gray-400">
+            <button
+              type="button"
+              className="p-0 text-gray-400"
+              onClick={() => {
+                dispatch(deleteCartItem(item.id));
+                dispatch(updateTotal(item.price * -qty));
+              }}
+            >
               <XIcon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>

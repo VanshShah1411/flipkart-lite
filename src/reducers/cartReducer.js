@@ -3,10 +3,10 @@ const cartReducer = (state = [], action) => {
     case "ADD_TO_CART":
       const newState = [...state];
       const item = state.find((el) => el.id === action.payload);
-      if (item) {
-        item.qty += 1;
-      } else {
+      if (!item) {
         newState.push({ id: action.payload, qty: 1 });
+      } else if (item && item.qty < 5) {
+        item.qty += 1;
       }
       return newState;
 
