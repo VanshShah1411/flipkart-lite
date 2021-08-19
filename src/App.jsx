@@ -11,6 +11,7 @@ import Navbar from "./components/Navbar";
 import SideCart from "./components/Cart/SideCart";
 import ProductDetailsNew from "./components/ProductDetails/ProductDetailsNew";
 import Checkout from "./components/Checkout/Checkout";
+import Footer from "./components/Footer";
 
 function App() {
   const dispatch = useDispatch();
@@ -28,6 +29,7 @@ function App() {
         <Route exact path="/checkout" component={Checkout} />
         <Route exact path="/" component={Home} />
       </Switch>
+      <Footer />
     </div>
   );
 }

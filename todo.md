@@ -75,7 +75,7 @@
 
 ### Kirua Todo
 
--> divide detail page into components
--> fetch data in detail page
--> Footer
+-> divide detail page into components - done
+-> fetch data in detail page - done
+-> Footer - working on it
 -> (smooth animation in dropdown)

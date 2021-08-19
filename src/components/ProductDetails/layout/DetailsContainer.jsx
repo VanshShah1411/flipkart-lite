@@ -3,12 +3,13 @@ import React from "react";
 // Icons
 import { HeartIcon } from "@heroicons/react/outline";
 import { ShareIcon } from "@heroicons/react/outline";
+import { ShoppingCartIcon } from "@heroicons/react/outline";
 
 // redux
 import { useDispatch } from "react-redux";
 import { addToCart, toggleCart, updateTotal } from "../../../actions/index";
 
-// components
+// layout components
 import Ratings from "./Ratings";
 import ColorOptions from "./ColorOptions";
 import SizeOptions from "./SizeOptions";
@@ -35,7 +36,7 @@ const DetailsContainer = ({ currentProduct }) => {
 
         {/* Price */}
         <h1 className="text-2xl tracking-wide font-light text-black-600">
-          {currentProduct.price}
+          ${currentProduct.price}
         </h1>
       </div>
 
@@ -46,18 +47,19 @@ const DetailsContainer = ({ currentProduct }) => {
       <div className="pb-5 border-b-2 border-gray-200 mb-4">
         <div className="flex justify-center align-center">
           <div className="border w-2/6 flex justify-center">
-            <button className="w-full py-3 hover:bg-gray-500">-</button>
+            <button className="w-full py-3 hover:bg-gray-200">-</button>
             <button className="w-full text-center">0</button>
-            <button className="w-full py-3 hover:bg-gray-500">+</button>
+            <button className="w-full py-3 hover:bg-gray-200">+</button>
           </div>
           <button
-            className="w-4/6 ml-10 text-white text-center bg-black hover:bg-gray-900"
+            className="w-4/6 ml-10 text-white text-center bg-black hover:bg-gray-900 flex justify-center items-center"
             onClick={() => {
               dispatch(addToCart(currentProduct.id));
-              dispatch(updateTotal(currProduct.price));
+              dispatch(updateTotal(currentProduct.price));
               dispatch(toggleCart());
             }}
           >
+            <ShoppingCartIcon className="w-4 h-4 mr-2" />
             Add to cart
           </button>
         </div>

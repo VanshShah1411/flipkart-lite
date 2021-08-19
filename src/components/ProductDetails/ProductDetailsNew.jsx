@@ -23,11 +23,10 @@ const ProductDetailsNew = () => {
 
   return (
     <div>
-      <div className="main-container lg:flex container px-5 pt-10">
+      <div className="main-container lg:flex container px-2 lg:px-12 pt-10">
         <ImageContainer image={currentProduct.image} />
         <DetailsContainer currentProduct={currentProduct} />
       </div>
-      {/* Related Products */}
       <RelatedProducts />
     </div>
   );

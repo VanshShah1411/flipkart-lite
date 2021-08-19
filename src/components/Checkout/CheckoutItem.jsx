@@ -1,10 +1,12 @@
 import React from "react";
 import { XIcon } from "@heroicons/react/outline";
+import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const CheckoutItem = ({ id, qty }) => {
   const products = useSelector((state) => state.products);
 
-  const item = products.find((el) => el.id === cartItem.id);
+  const item = products.find((el) => el.id === id);
 
   return (
     <div className="p-5 h-2/5 flex border ">
@@ -15,7 +17,9 @@ const CheckoutItem = ({ id, qty }) => {
       <div className="w-full flex flex-col p-4 justify-between">
         <div className="w-full flex justify-between">
           <div>
-            <h2 className="font-medium text-gray-600">{item.title}</h2>
+            <Link to={`/product/${id}`} className="font-medium text-gray-600 ">
+              {item.title.slice(0, 20) + "..."}
+            </Link>
             <h2 className="font-medium text-700">${item.price}</h2>
           </div>
           <div className="font-medium text-gray-900">

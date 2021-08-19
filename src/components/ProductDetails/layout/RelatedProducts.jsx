@@ -4,14 +4,14 @@ import { StarIcon } from "@heroicons/react/solid";
 const RelatedProducts = () => {
   return (
     <div className="my-10">
-      <h1 className="mb-4 mx-4 pb-4 border-b-2 text-xl tracking-wide font-semibold">
+      <h1 className="mb-4 mx-2 lg:mx-16 pb-4 border-b-2 text-xl tracking-wide font-semibold">
         Related Products
       </h1>
-      <div className="flex lg:flex-row lg:flex-nowrap flex-wrap justify-center items-center">
-        {[...Array(5)].map((_, i) => (
+      <div className="flex lg:flex-row px-12 flex-wrap justify-between items-center">
+        {[...Array(4)].map((_, i) => (
           <div
             key={i}
-            className="w-full my-3 px-4 py-4 hover:bg-gray-50 cursor-pointer"
+            className="w-full lg:w-1/5 my-3 px-4 py-4 hover:bg-gray-50 cursor-pointer"
           >
             <img
               className="bg-gray-200 h-2/6 rounded-md"
