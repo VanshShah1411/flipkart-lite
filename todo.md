@@ -70,6 +70,12 @@
 
 ### remaining
 
--> cart page
 -> orders complete
 -> local storage
+
+### Kirua Todo
+
+-> divide detail page into components
+-> fetch data in detail page
+-> Footer
+-> (smooth animation in dropdown)
