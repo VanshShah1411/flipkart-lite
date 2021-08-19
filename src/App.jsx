@@ -7,29 +7,26 @@ import { useDispatch } from "react-redux";
 import { getProducts } from "./actions/index";
 
 import Home from "./components/Home";
-import ProductDetail from "./components/ProductDetail";
 import Navbar from "./components/Navbar";
 import SideCart from "./components/Cart/SideCart";
 import ProductDetailsNew from "./components/ProductDetailsNew";
+import Checkout from "./components/Checkout/Checkout";
 
 function App() {
   const dispatch = useDispatch();
-  console.log("use effect se pahle");
 
   useEffect(() => {
-    console.log("use effect");
     dispatch(getProducts());
   }, []);
 
   return (
     <div className="App">
-      <productDetailsNew />
       <Navbar />
       <SideCart />
       <Switch>
-        <Route exact path="/product/:id" component={ProductDetail} />
-        {/* <Route exact path="/" component={Home} /> */}
-        <Route exact path="/" component={ProductDetailsNew} />
+        <Route exact path="/product/:id" component={ProductDetailsNew} />
+        <Route exact path="/checkout" component={Checkout} />
+        <Route exact path="/" component={Home} />
       </Switch>
     </div>
   );
