@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { getNotification } from "../../actions";
 
 import ConfirmModal from "./ConfirmModal";
 
@@ -9,6 +10,8 @@ const BillDetails = ({ cart }) => {
   const [open, setOpen] = useState(false);
   const subtotal = useSelector((state) => state.total);
 
+  const dispatch = useDispatch();
+
   const shipping = 2.0;
   const tax = subtotal * 0.06;
   const total = Number(subtotal + shipping + tax);
@@ -16,6 +19,13 @@ const BillDetails = ({ cart }) => {
   const handleOpen = () => {
     if (address) {
       setOpen(!open);
+    } else {
+      dispatch(
+        getNotification({
+          message: "Please enter a valid address",
+          color: "yellow",
+        })
+      );
     }
   };
   return (
