@@ -25,7 +25,7 @@ const CartItem = ({ item, qty, price }) => {
         <div>
           <div className="flex justify-between text-base font-medium text-gray-900">
             <h3 className="text-sm">{item.title}</h3>
-            <p className="ml-4">${price * qty}</p>
+            <p className="ml-4">${(price * qty).toFixed(2)}</p>
           </div>
         </div>
         <div className="flex-1 flex items-end justify-between text-sm">
@@ -43,7 +43,7 @@ const CartItem = ({ item, qty, price }) => {
             <button
               className="items-center w-7 mx-2 border border-transparent rounded-xl text-lg font-medium text-black text-center hover:bg-gray-300"
               onClick={() => {
-                if (qty < 5) {
+                if (qty < 10) {
                   dispatch(increaseCartItem(item.id));
                   dispatch(updateTotal(price));
                 }

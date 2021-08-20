@@ -86,7 +86,6 @@
 -> api
 -> placeholder for orders page
 -> Home page
+-> feedback modal transition
 
 ### Sidd Todo
-
--> quantity increase in detail page

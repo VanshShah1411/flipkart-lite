@@ -16,7 +16,7 @@ const cartReducer = (state = getLocalStorage("cart", []), action) => {
     case "ADD_TO_CART":
       if (!item) {
         newState.push({ id: action.payload, qty: 1 });
-      } else if (item && item.qty < 5) {
+      } else if (item && item.qty < 10) {
         item.qty += 1;
       }
       setLocalStorage("cart", newState);

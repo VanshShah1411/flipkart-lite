@@ -14,6 +14,7 @@ import Ratings from "./Ratings";
 import ColorOptions from "./ColorOptions";
 import SizeOptions from "./SizeOptions";
 import DisclosureContainer from "./DisclosureContainer";
+import { Link } from "react-router-dom";
 
 const DetailsContainer = ({ currentProduct }) => {
   const dispatch = useDispatch();
@@ -45,14 +46,16 @@ const DetailsContainer = ({ currentProduct }) => {
 
       {/* Quantity + Add to cart */}
       <div className="pb-5 border-b-2 border-gray-200 mb-4">
-        <div className="flex justify-center align-center">
-          <div className="border w-2/6 flex justify-center">
-            <button className="w-full py-3 hover:bg-gray-200">-</button>
-            <button className="w-full text-center">0</button>
-            <button className="w-full py-3 hover:bg-gray-200">+</button>
-          </div>
+        <div className="flex justify-center items-center">
+          <Link
+            to="/checkout"
+            className="w-2/6 py-4 text-white text-center rounded-sm shadow-sm bg-indigo-600 hover:bg-indigo-700 flex justify-center items-center"
+          >
+            <ShoppingCartIcon className="w-4 h-4 mr-2" />
+            Buy Now
+          </Link>
           <button
-            className="w-4/6 ml-10 text-white text-center rounded-sm shadow-sm bg-indigo-600 hover:bg-indigo-700 flex justify-center items-center"
+            className="w-4/6 ml-10 py-4 text-white text-center rounded-sm shadow-sm bg-indigo-600 hover:bg-indigo-700 flex justify-center items-center"
             onClick={() => {
               dispatch(addToCart(currentProduct.id));
               dispatch(updateTotal(currentProduct.price));
