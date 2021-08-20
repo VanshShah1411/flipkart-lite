@@ -67,6 +67,19 @@ const placeOrder = (obj) => {
   };
 };
 
+const getNotification = (obj) => {
+  return {
+    type: "GET_NOTIFICATION",
+    payload: obj,
+  };
+};
+
+const closeNotification = () => {
+  return {
+    type: "CLOSE_NOTIFICATION",
+  };
+};
+
 export {
   getProducts,
   addToCart,
@@ -78,4 +91,6 @@ export {
   placeOrder,
   clearCart,
   resetTotal,
+  getNotification,
+  closeNotification,
 };

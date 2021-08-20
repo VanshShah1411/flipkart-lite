@@ -7,7 +7,12 @@ import { ExclamationIcon } from "@heroicons/react/outline";
 
 // Redux
 import { useDispatch } from "react-redux";
-import { placeOrder, resetTotal, clearCart } from "../../actions/index";
+import {
+  placeOrder,
+  resetTotal,
+  clearCart,
+  getNotification,
+} from "../../actions/index";
 
 const ConfirmModal = ({ open, setOpen, address, cart, total }) => {
   const cancelButtonRef = useRef(null);
@@ -16,6 +21,12 @@ const ConfirmModal = ({ open, setOpen, address, cart, total }) => {
     dispatch(placeOrder({ cart, address, total }));
     dispatch(resetTotal(0));
     dispatch(clearCart());
+    dispatch(
+      getNotification({
+        message: "Your order was placed successfully.",
+        type: "success",
+      })
+    );
     setOpen(false);
   };
 
