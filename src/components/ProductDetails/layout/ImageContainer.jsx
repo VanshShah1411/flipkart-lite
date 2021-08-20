@@ -5,7 +5,7 @@ const ImageContainer = ({ image }) => {
     <div className="lg:w-1/2 lg:px-8 mx-auto flex lg:flex-col flex-wrap">
       {/* Image */}
       <img
-        className="w-full lg:h-96 h-64 object-contain object-center rounded bg-gray-100"
+        className="w-full lg:h-96 h-64 object-contain object-center rounded bg-white shadow-md"
         src={image}
         alt="ded"
       />

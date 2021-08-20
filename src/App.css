@@ -27,6 +27,7 @@ input[type="number"] {
 * {
   scrollbar-width: auto;
   scrollbar-color: #c9c9c9 #ffffff;
+  outline: none;
 }
 
 /* Chrome, Edge, and Safari */

@@ -7,10 +7,11 @@ import { XIcon } from "@heroicons/react/outline";
 // redux
 import { useSelector, useDispatch } from "react-redux";
 import { toggleCart } from "../../actions/index";
+import { Link } from "react-router-dom";
 
 // component
 import CartItem from "./CartItem";
-import { Link } from "react-router-dom";
+import CartisEmpty from "../Checkout/CartisEmpty";
 
 const SideCart = () => {
   const cart = useSelector((state) => state.cart);
@@ -77,8 +78,8 @@ const SideCart = () => {
                         >
                           {products.length ? (
                             !cart.length ? (
-                              <div>
-                                <h1>Nothing to show</h1>
+                              <div className="w-full text-left flex flex-col items-center">
+                                <CartisEmpty />
                               </div>
                             ) : (
                               cart.map((cartItem) => {
