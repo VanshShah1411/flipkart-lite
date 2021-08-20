@@ -28,8 +28,11 @@ const Navbar = () => {
           >
             Checkout
           </Link>
-          <Link to="/#" className="mr-5 hover:text-gray-900 cursor-pointer ">
-            Second Link
+          <Link
+            to="/orders"
+            className="mr-5 hover:text-gray-900 cursor-pointer "
+          >
+            Previous Orders
           </Link>
           <Link to="./#" className="mr-5 hover:text-gray-900 cursor-pointer ">
             Third Link

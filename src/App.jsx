@@ -12,6 +12,7 @@ import SideCart from "./components/Cart/SideCart";
 import ProductDetail from "./components/ProductDetails/ProductDetail";
 import Checkout from "./components/Checkout/Checkout";
 import Footer from "./components/Footer";
+import Orders from "./components/Orders/Orders";
 
 function App() {
   const dispatch = useDispatch();
@@ -27,6 +28,7 @@ function App() {
       <Switch>
         <Route exact path="/product/:id" component={ProductDetail} />
         <Route exact path="/checkout" component={Checkout} />
+        <Route exact path="/orders" component={Orders} />
         <Route exact path="/" component={Home} />
       </Switch>
       <Footer />
