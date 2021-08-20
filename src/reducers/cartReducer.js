@@ -1,10 +1,3 @@
-// const setLocalStorage = (cart) => {
-//   localStorage.setItem("cart", JSON.stringify(cart));
-// };
-
-// let cartData = localStorage.getItem("cart");
-// let initialState = cartData ? JSON.parse(cartData) : [];
-
 import { setLocalStorage, getLocalStorage } from "../utils.js";
 
 const deleteItem = (cart, id) => {
