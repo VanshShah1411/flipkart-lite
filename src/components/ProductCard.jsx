@@ -9,7 +9,7 @@ const ProductCard = ({ product }) => {
       to={`/product/${product.id}`}
       className="group shadow-lg"
     >
-      <div className="p-4 w-full aspect-w-1 aspect-h-1 bg-white rounded-lg overflow-hidden xl:aspect-w-5 xl:aspect-h-4">
+      <div className="p-4 w-full h-60 aspect-w-1 aspect-h-1 bg-white rounded-lg overflow-hidden xl:aspect-w-5 xl:aspect-h-4">
         <img
           src={product.image}
           alt={product.title}
