@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
+import CartisEmpty from "./CartisEmpty";
 import CheckoutItem from "./CheckoutItem";
 import ConfirmModal from "./ConfirmModal";
 
@@ -12,7 +13,7 @@ const Checkout = () => {
   const subtotal = useSelector((state) => state.total);
 
   const shipping = 2.0;
-  console.log(subtotal);
+
   const tax = subtotal * 0.06;
   const total = Number(subtotal + shipping + tax);
 
@@ -24,7 +25,7 @@ const Checkout = () => {
 
   if (!cart.length) {
     // When nothing to show, render a beautiful 404 type page
-    return <div>No items in cart</div>;
+    return <CartisEmpty />;
   }
 
   return (
@@ -34,9 +35,7 @@ const Checkout = () => {
         {/* Cart Items  */}
         {products.length ? (
           !cart.length ? (
-            <div>
-              <h1>Nothing to show</h1>
-            </div>
+            <CartisEmpty />
           ) : (
             cart.map((item) => (
               <CheckoutItem id={item.id} qty={item.qty} key={item.id} />
