@@ -28,7 +28,7 @@ const Navbar = () => {
           >
             Checkout
           </Link>
-          <Link to="./#" className="mr-5 hover:text-gray-900 cursor-pointer ">
+          <Link to="/#" className="mr-5 hover:text-gray-900 cursor-pointer ">
             Second Link
           </Link>
           <Link to="./#" className="mr-5 hover:text-gray-900 cursor-pointer ">

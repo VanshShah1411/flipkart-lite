@@ -62,16 +62,16 @@ const Footer = () => {
       </footer>
       {/* Links */}
       <div className="my-4 flex justify-around lg:justify-center items-center ">
-        <Link>
+        <Link to="#">
           <i className="hover:text-blue-600 lg:mx-6 text-xl fab fa-facebook-f"></i>
         </Link>
-        <Link>
+        <Link to="#">
           <i className="hover:text-blue-600 lg:mx-6 text-xl fab fa-linkedin-in"></i>
         </Link>
-        <Link>
+        <Link to="#">
           <i className="hover:text-blue-600 lg:mx-6 text-xl fab fa-twitter"></i>
         </Link>
-        <Link>
+        <Link to="#">
           <i className="hover:text-blue-600 lg:mx-6 text-xl fab fa-github"></i>
         </Link>
       </div>
