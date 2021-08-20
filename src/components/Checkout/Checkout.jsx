@@ -12,8 +12,9 @@ const Checkout = () => {
   const subtotal = useSelector((state) => state.total);
 
   const shipping = 2.0;
+  console.log(subtotal);
   const tax = subtotal * 0.06;
-  const total = subtotal + shipping + tax;
+  const total = Number(subtotal + shipping + tax);
 
   const handleOpen = () => {
     if (address) {
