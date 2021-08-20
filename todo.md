@@ -73,19 +73,20 @@
 -> When nothing to show, render a beautiful 404 type page
 -> Divide checkout section into Components
 -> place order
+-> feedback modal/message on placing order
+-> orders page
+-> orders page / place order (actual design)
 
 ### remaining
 
--> api
 -> smooth transitions
 
 ### Kirua Todo
 
--> orders page / place order (actual design)
+-> api
+-> placeholder for orders page
 -> Home page
--> quantity increase in detail page
 
 ### Sidd Todo
 
--> feedback modal/message on placing order
--> orders page
+-> quantity increase in detail page

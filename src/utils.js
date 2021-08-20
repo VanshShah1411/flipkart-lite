@@ -9,4 +9,12 @@ const getLocalStorage = (key, initialValue) => {
   return initialState;
 };
 
-export { setLocalStorage, getLocalStorage };
+const randomIDGenerator = () => {
+  return Math.random().toString(36).substr(2, 19);
+};
+
+const getTimeStamp = () => {
+  return new Date().toString().slice(4, 24);
+};
+
+export { setLocalStorage, getLocalStorage, randomIDGenerator, getTimeStamp };

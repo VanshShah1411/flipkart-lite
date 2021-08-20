@@ -14,7 +14,7 @@ const CheckoutItem = ({ id, qty }) => {
   return (
     <div className="p-5 lg:h-2/5 flex items-center flex-col lg:flex-row lg:items-start border mb-2">
       <img className="w-40 p-4 h-full rounded-md border" src={item.image} />
-      <div className="w-full flex flex-col p-4 justify-between">
+      <div className="w-full h-full flex flex-col p-4 justify-between">
         <div className="w-full flex justify-between">
           <div>
             <Link to={`/product/${id}`} className="font-medium text-gray-600 ">
