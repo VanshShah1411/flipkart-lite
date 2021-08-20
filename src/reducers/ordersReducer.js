@@ -1,4 +1,9 @@
-import { setLocalStorage, getLocalStorage } from "../utils.js";
+import {
+  setLocalStorage,
+  getLocalStorage,
+  randomIDGenerator,
+  getTimeStamp,
+} from "../utils.js";
 
 const productsReducer = (state = getLocalStorage("orders", []), action) => {
   switch (action.type) {
@@ -9,6 +14,8 @@ const productsReducer = (state = getLocalStorage("orders", []), action) => {
           cart: action.payload.cart,
           address: action.payload.address,
           total: action.payload.total,
+          orderId: randomIDGenerator(),
+          timestamp: getTimeStamp(),
         },
       ];
       setLocalStorage("orders", newState);
