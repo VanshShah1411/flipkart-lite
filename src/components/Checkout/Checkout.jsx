@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import BillDetails from "./BillDetails";
+import BillDetailsPlaceholder from "./BillDetailsPlaceholder";
 import CartisEmpty from "./CartisEmpty";
 import CheckoutItem from "./CheckoutItem";
 import CheckoutItemPlaceholder from "./CheckoutItemPlaceholder";
@@ -30,7 +31,11 @@ const Checkout = () => {
             ))}
       </div>
       {/* Order Details */}
-      <BillDetails cart={cart} />
+      {products.length ? (
+        <BillDetails cart={cart} />
+      ) : (
+        <BillDetailsPlaceholder />
+      )}
     </div>
   );
 };
