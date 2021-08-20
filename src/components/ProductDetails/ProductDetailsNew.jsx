@@ -16,7 +16,7 @@ const ProductDetailsNew = () => {
   const currentProduct = products.find((el) => el.id === +id);
 
   if (products.length === 0) {
-    return <div className="flex items-center justify-center">Loading...</div>;
+    return <ProductDetailsPlaceholder />;
   }
   return (
     <div>
