@@ -76,6 +76,7 @@
 -> feedback modal/message on placing order
 -> orders page
 -> orders page / place order (actual design)
+-> placeholder for orders page
 
 ### remaining
 
@@ -83,9 +84,8 @@
 
 ### Kirua Todo
 
--> api
--> placeholder for orders page
+-> feedback modal transition ( smjh ni aa rha )
 -> Home page
--> feedback modal transition
+-> api
 
 ### Sidd Todo

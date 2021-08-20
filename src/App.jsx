@@ -14,6 +14,7 @@ import Checkout from "./components/Checkout/Checkout";
 import Footer from "./components/Footer";
 import Orders from "./components/Orders/Orders";
 import NotificationModal from "./components/NotificationModal";
+import OrderPlaceholder from "./components/Orders/OrderPlaceholder";
 
 function App() {
   const notification = useSelector((state) => state.notification);
@@ -59,6 +60,7 @@ function App() {
         <Route exact path="/checkout" component={Checkout} />
         <Route exact path="/orders" component={Orders} />
         <Route exact path="/" component={Home} />
+        <Route exact path="/demo" component={OrderPlaceholder} />
       </Switch>
       <Footer />
     </div>

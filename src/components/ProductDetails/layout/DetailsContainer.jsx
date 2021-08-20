@@ -51,11 +51,10 @@ const DetailsContainer = ({ currentProduct }) => {
             to="/checkout"
             className="w-2/6 py-4 text-white text-center rounded-sm shadow-sm bg-indigo-600 hover:bg-indigo-700 flex justify-center items-center"
           >
-            <ShoppingCartIcon className="w-4 h-4 mr-2" />
             Buy Now
           </Link>
           <button
-            className="w-4/6 ml-10 py-4 text-white text-center rounded-sm shadow-sm bg-indigo-600 hover:bg-indigo-700 flex justify-center items-center"
+            className="w-4/6 ml-5 py-4 text-white text-center rounded-sm shadow-sm bg-black hover:bg-gray-700 flex justify-center items-center"
             onClick={() => {
               dispatch(addToCart(currentProduct.id));
               dispatch(updateTotal(currentProduct.price));
