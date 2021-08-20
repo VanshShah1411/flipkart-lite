@@ -23,7 +23,7 @@ const BillDetails = ({ cart }) => {
       dispatch(
         getNotification({
           message: "Please enter a valid address",
-          color: "yellow",
+          type: "alert",
         })
       );
     }

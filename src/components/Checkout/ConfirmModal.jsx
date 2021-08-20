@@ -24,7 +24,7 @@ const ConfirmModal = ({ open, setOpen, address, cart, total }) => {
     dispatch(
       getNotification({
         message: "Your order was placed successfully.",
-        color: "green",
+        type: "success",
       })
     );
     setOpen(false);

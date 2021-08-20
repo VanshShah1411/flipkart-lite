@@ -31,20 +31,28 @@ function App() {
 
   return (
     <div className="App">
+      {/* Navbar and sidecart */}
       <Navbar />
       <SideCart />
+
+      {/* notification handling */}
       {notification.open ? (
-        <NotificationModal
-          message={notification.message}
-          color={notification.color}
-        />
+        <>
+          <NotificationModal
+            message={notification.message}
+            type={notification.type}
+          />
+          <h1 className="hidden">
+            {setTimeout(() => {
+              dispatch(closeNotification());
+            }, 2000)}
+          </h1>
+        </>
       ) : (
         ""
       )}
-      {notification.open &&
-        setTimeout(() => {
-          dispatch(closeNotification());
-        }, 2000)}
+
+      {/* Routes */}
       <Switch>
         <Route exact path="/product/:id" component={ProductDetail} />
         <Route exact path="/checkout" component={Checkout} />

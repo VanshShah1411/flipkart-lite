@@ -1,7 +1,7 @@
 const initialState = {
   message: "",
   open: false,
-  color: "",
+  type: "",
 };
 
 const notificationReducer = (state = initialState, action) => {
@@ -11,7 +11,7 @@ const notificationReducer = (state = initialState, action) => {
         ...state,
         message: action.payload.message,
         open: true,
-        color: action.payload.color,
+        type: action.payload.type,
       };
     case "CLOSE_NOTIFICATION":
       return { ...state, open: false };
