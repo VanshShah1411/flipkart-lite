@@ -3,12 +3,12 @@
     "id": 1,
     "category": "men's clothing",
     "description": "Cotton & Flax. Soft and Comfy.\nButton closure\nFeatures: lightweight, regular slim fit, casual work, turn down collar, short sleeve, solid color, button up, collared, summer top, chest pockets\nClassic Casual Shirt for Men / Boys / High School or College Students / All the Youth or Adults.\nStylish and Modern Design is perfect all occasions especially casual outings, beach and summer activities and much more With every season in mind\nSize & Color: M/ L/ 1L/ 2L, White/ Black/ Greem/ Sky Blue/ Grey\nWork made better: we listen to customer feedback and fine-tune every detail to ensure quality, fit, and comfort",
-    "image": "https://m.media-amazon.com/images/I/41nPag5TEyL.jpg",
-    "extra-image": [
+
+    "images": [
+      "https://m.media-amazon.com/images/I/41nPag5TEyL.jpg",
       "https://m.media-amazon.com/images/I/31sh8YC9CzL.jpg",
       "https://m.media-amazon.com/images/I/21+l5fe3XaL.jpg",
-      "https://m.media-amazon.com/images/I/317Onz0BF4L.jpg",
-      "https://m.media-amazon.com/images/I/21sRV0LktKL.jpg"
+      "https://m.media-amazon.com/images/I/317Onz0BF4L.jpg"
     ],
     "price": 15.99,
     "title": "Mens Short Sleeve Shirts"
@@ -17,11 +17,12 @@
     "id": 2,
     "category": "men's clothing",
     "description": "100% Cotton\nImported\nButton closure\nTumble dry low\nUS size,3 buttons,Pull On closure, Imported\nA classic cut long sleeve soft cotton fabric make this polo a go-to for the office or the weekend\nOur men's polo shirts come in a wide range of color choices to help suit every individual’s personal style and preference – whether you prefer a vibrant, bright, sober or a sporty color, we have it all\nWhether you're at the gym or on the couch makes clothing that will withstand any activity or non activity. You can trust that your clothes will outlast the competition, just like you.\nTips: Not the sizes you wanted? Something wrong with Quality? Please message us anytime with your inquiries, we are here to listen!\nShow more",
-    "image": "https://m.media-amazon.com/images/I/41fDeJNY8hL.jpg",
-    "extra-image": [
+
+    "images": [
+      "https://m.media-amazon.com/images/I/41fDeJNY8hL.jpg",
       "https://m.media-amazon.com/images/I/416MLpI5IHL.jpg",
       "https://m.media-amazon.com/images/I/41+oj8UycNL.jpg",
-      "https://m.media-amazon.com/images/I/5148Kr05dlL.jpg"
+      "https://m.media-amazon.com/images/I/416MLpI5IHL.jpg"
     ],
     "price": 23.99,
     "title": "KUYIGO Men's Short & Long Sleeve"
@@ -30,13 +31,12 @@
     "id": 3,
     "category": "men's clothing",
     "description": "★92% polyester 8% spandex,lightweight, stretchy,soft,providing you superior comfort without sacrificing mobility.\n★Your casual wardrobe could use a little pick-me-up with this vibrant color tee. Comfy and relaxed fit with crew neckline and short-sleeve design.\n★Quick-dry athletic shirts with superior air permeability, offering dry and cool feeling during exercise,thereby effectively wicking moisture away from your skin and helping to keep you comfortable all day and throughout your workout.\n★Designed for an athletic comfortable experience. Crew-neck provides a nonrestrictive fit; short-sleeve allows for a wider range of motion. this lightweight training shirt is great to wear during any activity, and is a must-have for your athletic wardrobe, like fitness, running, cycling, soccer, all purpose style of it is good for matching any kinds of pants.\n★This classic tee features just a little extra style,add a pop of color to your summer fit",
-    "image": "https://m.media-amazon.com/images/I/51Vfi13AE3L.jpg",
-    "extra-image": [
+
+    "images": [
+      "https://m.media-amazon.com/images/I/51Vfi13AE3L.jpg",
       "https://m.media-amazon.com/images/I/51rOp+LmfyL.jpg",
       "https://m.media-amazon.com/images/I/512P9toR3AL.jpg",
-      "https://m.media-amazon.com/images/I/51MNVSKZ2pL.jpg",
-      "https://m.media-amazon.com/images/I/41DFMdfrTuL.jpg",
-      "https://m.media-amazon.com/images/I/5118WEyzLlL.jpg"
+      "https://m.media-amazon.com/images/I/51MNVSKZ2pL.jpg"
     ],
     "price": 49.99,
     "title": "KUYIGO Men's Short & Long Sleeve"
@@ -45,13 +45,238 @@
     "id": 4,
     "category": "men's clothing",
     "description": "100% Cotton\nPull On closure\nMachine Wash\nCotton Linen Material - The men's casual Henley shirt are made of soft cotton fabric, comfortable and lightweight, moisture-wicking and breathable, make you cool all the time.\nClassic Design - With collarless neckline with four buttons closure, relaxed fit, solid color and long sleeves, this men's casual beach henley shirt is classic and stylish, never outdated and easy to match your clothing.\nSuitable Occasions - The men's lightweight popover henley tops can be worn for plenty of occasions, perfect for casual wearing in daily life, work, beach, yoga, party, date, lounge or just hang out.\nClothing Match - These regular fit shirts could be easy to match with dress pants, slacks, chinos, and jeans, creating you casual style and attractive looking in the crowd.\nWarm Tips - Machine washable and hand washing are both available for lightweight henley tee. Please check your size with our SIZE CHART before you buy it.",
-    "image": "https://m.media-amazon.com/images/I/41jm1DC0kZL.jpg",
-    "extra-image": [
+
+    "images": [
+      "https://m.media-amazon.com/images/I/41jm1DC0kZL.jpg",
       "https://m.media-amazon.com/images/I/41q4jc+9iRL.jpg",
       "https://m.media-amazon.com/images/I/41kQyAS2DYL.jpg",
       "https://m.media-amazon.com/images/I/41bCIvlMuyL.jpg"
     ],
     "price": 69.99,
     "title": "COOFANDY Mens Cotton Linen Henley Shirt Casual"
+  },
+  {
+    "id": 5,
+    "category": "gaming",
+    "description": "The apex 3 is your first step into next level gaming. Built from the ground up with intuitive gaming-focused features like water resistance, 10-zone RGB, whisper quiet gaming switches, and gaming grade anti-ghosting, the apex 3 has just what you need to outshine, outperform, and outlast the competition.",
+
+    "images": [
+      "https://m.media-amazon.com/images/I/51yGDIvFH1L.jpg",
+      "https://m.media-amazon.com/images/I/51113jCfD5L.jpg",
+      "https://m.media-amazon.com/images/I/51dW5PdS59L.jpg",
+      "https://m.media-amazon.com/images/I/51hWBfdLAJL.jpg"
+    ],
+    "price": 119.99,
+    "title": "teelSeries Apex 3 RGB Gaming Keyboard – 10-Zone RGB Illumination "
+  },
+  {
+    "id": 6,
+    "category": "gaming",
+    "description": "Support PlayStation 4, New Xbox One, PC, Nintendo 3DS, Laptop, PSP, Tablet, iPad, Computer, Mobile Phone. Please note you need an extra Microsoft Adapter (Not Included) when connect with an old version Xbox One controller.\n【Surrounding Stereo Subwoofer】Clear sound operating strong brass, splendid ambient noise isolation and high precision 40mm magnetic neodymium driver, acoustic positioning precision enhance the sensitivity of the speaker unit, bringing you vivid sound field, sound clarity, shock feeling sound. Perfect for various games like Halo 5 Guardians, Metal Gear Solid, Call of Duty, Star Wars Battlefront, Overwatch, World of Warcraft Legion, etc.\n【Noise Isolating Microphone】Headset integrated onmi-directional microphone can transmits high quality communication with its premium noise-concellng feature, can pick up sounds with great sensitivity and remove the noise, which enables you clearly deliver or receive messages while you are in a game. Long flexible mic design very convenient to adjust angle of the microphone.\n【Great Humanized Design】Superior comfortable and good air permeability protein over-ear pads, muti-points headbeam, acord with human body engineering specification can reduce hearing impairment and heat sweat.Skin friendly leather material for a longer period of wearing. Glaring LED lights desigend on the earcups to highlight game atmosphere.\n【Effortlessly Volume Control】High tensile strength, anti-winding braided USB cable with rotary volume controller and key microphone mute effectively prevents the 49-inches long cable from twining and allows you to control the volume easily and mute the mic as effortless volume control one key mute.",
+
+    "images": [
+      "https://m.media-amazon.com/images/I/51q0meZK6WL.jpg",
+      "https://m.media-amazon.com/images/I/51DiqbXVDVL.jpg",
+      "https://m.media-amazon.com/images/I/61y41XOsW5L.jpg",
+      "https://m.media-amazon.com/images/I/51v1kqtiW5L.jpg"
+    ],
+    "price": 209.99,
+    "title": "BENGOO G9000 Stereo Gaming Headset for PS4 PC Xbox One PS5 Controller,"
+  },
+  {
+    "id": 7,
+    "category": "gaming",
+    "description": "CYBERPOWERPC Gamer Master series is a line of gaming PCs powered by AMD’s Ryzen CPU and accompanying AM4 architecture. The Ryzen 3 CPU is the core to the series with fast processing speeds and up to 4 cores / 8 threads for effortless multi-tasking. The Gamer Master also includes the AMD Radeon or NVIDIA’s GeForce series of graphics cards to deliver high frame rates and impeccable image quality in the newest PC games.",
+
+    "images": [
+      "https://m.media-amazon.com/images/I/51ScGOI5fnS.jpg",
+      "https://m.media-amazon.com/images/I/418mDI8uBpL.jpg",
+      "https://m.media-amazon.com/images/I/31hys5uJR9L.jpg",
+      "https://m.media-amazon.com/images/I/410Br1sScnL.jpg"
+    ],
+    "price": 509.99,
+    "title": "CYBERPOWERPC Gamer Master Gaming PC, AMD Ryzen 3 3100 3.6GHz, 8GB DDR4, Radeon RX 550 2GB,"
+  },
+  {
+    "id": 8,
+    "category": "gaming",
+    "description": "Smooth Display: The 17.3” 240Hz display delivers a high refresh rate for smooth and vibrant gameplay so you don't miss a frame of the game\nPowered Up: The 10th Gen. Intel Core i7 processor, delivers solid high performance processing power to bring you an unparalleled gaming experience\nSupercharged Graphics: The RTX 2060 features ray tracing to deliver physically accurate shadows, reflections and lighting for better visual gameplay\nPlay Cool: Featuring CPU and GPU cooling technology to maximize airflow and thermals for smooth gaming and performance within a compact chassis\nLightning Speeds: Sporting a Thunderbolt 3 port, get up to 40Gbps transfer speeds and up to 100 Watts power delivery for faster charging\n›\nSee more product details",
+
+    "images": [
+      "https://m.media-amazon.com/images/I/31qAlOX2ydL.jpg",
+      "https://m.media-amazon.com/images/I/41cpL48aC1L.jpg",
+      "https://m.media-amazon.com/images/I/41TQNNNbQlL.jpg",
+      "https://m.media-amazon.com/images/I/31gsJxF2vIL.jpg"
+    ],
+    "price": 909.99,
+    "title": "SI GS75 Stealth Gaming Laptop: 17.3\" 240Hz Display, Intel Core i7-10875H, NVIDIA GeForce"
+  },
+  {
+    "id": 9,
+    "category": "accessories",
+    "description": "Google Wifi 3 Pack packaged with a Google Seal for Online Marketplace Google Wifi is an easy-to-set-up whole-home mesh Wi-Fi system. Google Wifi points work together to create a mesh network that blankets your whole home in fast, reliable Wi-Fi and eliminates buffering in every room, on every device – with coverage up to 4500 square feet.[1] It’s Wi-Fi that just works. [1] Home size, materials, and layout can affect how Wi-Fi signal travels. Larger homes or homes with thicker walls or long, narrow layouts may need extra Wifi points for full coverage. Strength and speed of signal will depend on your internet provider. [3] Controlling certain devices and features in your home requires a compatible smart device.",
+
+    "images": [
+      "https://m.media-amazon.com/images/I/21i+z3+0M5L.jpg",
+      "https://m.media-amazon.com/images/I/51XJyV3qRPL.jpg",
+      "https://m.media-amazon.com/images/I/41mnERT31ZL.jpg",
+      "https://m.media-amazon.com/images/I/41bJTF+J8mL.jpg"
+    ],
+    "price": 409.99,
+    "title": "Google Wifi - AC1200 - Mesh WiFi System - Wifi Router - 4500 Sq Ft Coverage - 3 pack"
+  },
+  {
+    "id": 10,
+    "category": "accessories",
+    "description": "Samsung Galaxy Buds+ are versatile earbuds that harmonize warm, satisfying bass tones with crisp high notes delivering addictively rich tracks. With the ability to selectively tune in or out environmental noise, you can stay in the zone on a phone call or get lost in your favorite playlist, all without hitting pause. With a battery that is built to go all day and a customizable fit, Galaxy Buds+ are designed to move to your rhythm.",
+
+    "images": [
+      "https://m.media-amazon.com/images/I/41YlQkSRftL.jpg",
+      "https://m.media-amazon.com/images/I/41PMJtkGGML.jpg",
+      "https://m.media-amazon.com/images/I/41xL6mtLtHL.jpg",
+      "https://m.media-amazon.com/images/I/515M7fO4oSS.jpg"
+    ],
+    "price": 178.55,
+    "title": "Samsung Galaxy Buds Plus, True Wireless Earbuds "
+  },
+  {
+    "id": 11,
+    "category": "accessories",
+    "description": "Meet Fitbit versa 2 a smartwatch that elevates every moment. Use your voice to create alarms, set bedtime reminders or check the weather with amazon Alexa built in. Take your look from the gym to the office with its modern and versatile design. See your stats with an always-on display mode. In addition, get Fitbit pay, daily sleep quality scores, apps, notifications, 24/7 heart rate and store 300+ songs for an experience that revolves around you.",
+
+    "images": [
+      "https://m.media-amazon.com/images/I/41Ox0Um3KTL.jpg",
+      "https://m.media-amazon.com/images/I/31bfzX7CkDL.jpg",
+      "https://m.media-amazon.com/images/I/41OlR192JGL.jpg",
+      "https://m.media-amazon.com/images/I/513tb7q3dzL.jpg"
+    ],
+    "price": 128.55,
+    "title": "Fitbit Versa 2 Health and Fitness Smartwatch with Heart Rate, Music, Alexa Built-In "
+  },
+  {
+    "id": 12,
+    "category": "accessories",
+    "description": "Enjoy a seamless, wireless experience with a headset fine-tuned for 3D Audio on PS5 consoles. The PULSE 3D wireless headset features a refined design with dual noise-cancelling microphones, built-in rechargeable battery, and an array of easy-access controls. Available when feature is supported by game.",
+
+    "images": [
+      "https://m.media-amazon.com/images/I/41HQbvhq8AL.jpg",
+      "https://m.media-amazon.com/images/I/31JzYDoOrTL.jpg",
+      "https://m.media-amazon.com/images/I/31Pi9a3tRCL.jpg",
+      "https://m.media-amazon.com/images/I/81lyfhN9cRL.jpg"
+    ],
+    "price": 578.55,
+    "title": "Sony PULSE 3D Wireless Headset"
+  },
+  {
+    "id": 13,
+    "category": "electronics",
+    "description": "The Samsung Galaxy S21 Ultra 5G phone is epic in every way, with a striking new design, fastest Galaxy processor yet, a battery that goes all day and then some, and the first Galaxy ever supporting super smooth 120Hz screen refresh rate at WQHD+ resolution, it’s no surprise why Ultra easily lives up to its name.That’s why Galaxy S21 Ultra 5G is purposefully crafted so you don’t need to choose between video and photo. Use the 108MP high-resolution camera for still shots that come out crystal clear whether it’s day or night. Single Take AI transcends the usual restrictions of photo and video editing to capture life’s greatest moments, wherever they happen, in one single take, capturing images and video for up to 15 seconds. ",
+
+    "images": [
+      "https://m.media-amazon.com/images/I/41Vsckg2YEL.jpg",
+      "https://m.media-amazon.com/images/I/21FpuHeMmuL.jpg",
+      "https://m.media-amazon.com/images/I/21YS+PFwhWL.jpg",
+      "https://m.media-amazon.com/images/I/21DDZiMlQuL.jpg"
+    ],
+    "price": 108.55,
+    "title": "SAMSUNG Galaxy S21 Ultra 5G Factory Unlocked Android Cell Phone 256GB"
+  },
+  {
+    "id": 14,
+    "category": "electronics",
+    "description": "Life on the go just got a lot easier with Commuter Series. From professional to casual, Commuter Series is a trusted favorite. Featuring a soft internal slipcover and a rigid external shell, Commuter Series keeps your phone safe from day-to-day drops and scrapes. Additionally, a silver-based antimicrobial additive is integrated into the case that helps inhibit microbial growth and defends the case exterior against many common bacteria. Weaving the additive into the case materials ensures it keeps protecting your case 24/7/365 and outlasts heavy use.  ",
+
+    "images": [
+      "https://m.media-amazon.com/images/I/41zE6cGMjyL.jpg",
+      "https://m.media-amazon.com/images/I/31APGHnzT3S.jpg",
+      "https://m.media-amazon.com/images/I/417yl+J0TVS.jpg",
+      "https://m.media-amazon.com/images/I/41qgLDSAqRS.jpg"
+    ],
+    "price": 1008.55,
+    "title": "OtterBox Commuter Series Case for iPhone 12 & iPhone 12 Pro - 6.1inches - Black"
+  },
+  {
+    "id": 15,
+    "category": "electronics",
+    "description": "The upgrade you've been waiting for.What you want, all in one ultra-slim 4K package. It's an Ultra High Definition cinema screen display backed by our powerful processor to enhance color, contrast, detail and sound. It's a huge library of content right at your fingertips. It's control of all your compatible smart home devices with ThinQ AI and the Magic Remote.",
+
+    "images": [
+      "https://m.media-amazon.com/images/I/51wjHydnaLL.jpg",
+      "https://m.media-amazon.com/images/I/61Dws8xqNvL.jpg",
+      "https://m.media-amazon.com/images/I/21kI9phdUNL.jpg",
+      "https://m.media-amazon.com/images/I/61hzl3eC2sL.jpg"
+    ],
+    "price": 18.55,
+    "title": "LG 65UP8000PUA Alexa Built-in 65\" 4K Smart UHD TV (2021)"
+  },
+  {
+    "id": 16,
+    "category": "electronics",
+    "description": "The 3-Series TCL Android TV puts all your entertainment favorites in one place, allowing quick access to over 700,000 movies and TV episodes, your cable box, gaming console, and other devices—all from your speedy, simplified home screen. Enjoy entertainment, get answers, and control devices around your home using Google Assistant. The Google Assistant is always on, ready to help, and makes life in your living room that much more relaxing.",
+
+    "images": [
+      "https://m.media-amazon.com/images/I/513REi5l7qL.jpg",
+      "https://m.media-amazon.com/images/I/41DawxKa-KL.jpg",
+      "https://m.media-amazon.com/images/I/41kT3Ko+qeL.jpg",
+      "https://m.media-amazon.com/images/I/31V8MsJZ7FL.jpg"
+    ],
+    "price": 618.55,
+    "title": "TCL 32-inch Class 3-Series HD LED Smart Android TV - 32S334, 2021 Model"
+  },
+  {
+    "id": 17,
+    "category": "house",
+    "description": "Quality Construction: Our 1800 series queen bed skirts are double brushed and made of 100% microfiber material for that extra touch of softness.\nSleek & Stylish: Our queen size bed skirt is the perfect finishing touch to complete the design of your bedroom. The pleated corners create a sophisticated and clean look!\nDeep Drop: These queen bed skirts fall at 60\" x 80\" with a 14 inch drop to cover even the thickest mattresses and box springs.\nCreative Colors: Whether you're looking for navy, grey, white, blue, brown, ivory, or burgundy, we've got you covered.",
+
+    "images": [
+      "https://m.media-amazon.com/images/I/41-U4gx6aOL.jpg",
+      "https://m.media-amazon.com/images/I/41Q2ljDPS9L.jpg",
+      "https://m.media-amazon.com/images/I/41PKrBseR7L.jpg",
+      "https://m.media-amazon.com/images/I/41Dp-mVqMBL.jpg"
+    ],
+    "price": 418.55,
+    "title": "HC Collection Brown Queen Bed Skirt - Dust Ruffle w/ 14 Inch Drop "
+  },
+  {
+    "id": 18,
+    "category": "house",
+    "description": "100% Polyester\nImported\nFull/Queen-size bed set includes a comforter (88 by 90 inches) and 2 standard pillow shams (20 by 26 inches)\nReversible design with micromink polyester on one side and white faux Sherpa fleece on the reverse; both sides offer supreme softness and cozy warmth for any season\nMade of 100% polyester material; stuffed with plush down-alternative filling; reinforced with box stitching to prevent fill from shifting",
+
+    "images": [
+      "https://m.media-amazon.com/images/I/41InVjuAxeL.jpg",
+      "https://m.media-amazon.com/images/I/41Yh9oEeCdL.jpg",
+      "https://m.media-amazon.com/images/I/41qpU8sCGeL.jpg",
+      "https://m.media-amazon.com/images/I/41xfYsezwmL.jpg"
+    ],
+    "price": 498.55,
+    "title": "Ultra-Soft Micromink Sherpa Comforter Bed Set - Taupe, Full/Queen"
+  },
+  {
+    "id": 19,
+    "category": "house",
+    "description": "100% Polyester\nImported\nTwin-size bed set includes a comforter (64 by 88 inches) and a standard pillow sham (20 by 26 inches)\nReversible design with micromink polyester on one side and white faux Sherpa fleece on the reverse; both sides offer supreme softness and cozy warmth for any season\nMade of 100% polyester material; stuffed with plush down-alternative filling; reinforced with box stitching to prevent fill from shifting",
+
+    "images": [
+      "https://m.media-amazon.com/images/I/51b0qwiaEvL.jpg",
+      "https://m.media-amazon.com/images/I/41za5sN9-cL.jpg",
+      "https://m.media-amazon.com/images/I/41XlkvH4ZsL.jpg",
+      "https://m.media-amazon.com/images/I/41+mLrgu2AL.jpg"
+    ],
+    "price": 18.55,
+    "title": "Ultra-Soft Micromink Sherpa Comforter Bed Set - Red, Twin"
+  },
+  {
+    "id": 20,
+    "category": "house",
+    "description": "polyester\nImported\nReversible blanket with polyester sherpa and micromink sides\nCan be used as a bedspread or throw\nCan be used in all seasons\nWrinkle-resistant material that deflects lint and pet hair\nMachine washable",
+
+    "images": [
+      "https://m.media-amazon.com/images/I/511EKzCdJ2L.jpg",
+      "https://m.media-amazon.com/images/I/31eSHD0-adL.jpg",
+      "https://m.media-amazon.com/images/I/31CAFr3TxnL.jpg",
+      "https://m.media-amazon.com/images/I/516g9fqpL4L.jpg"
+    ],
+    "price": 28.55,
+    "title": "Ultra-Soft Micromink Sherpa Blanket - Full or Queen, Charcoal"
   }
 ]

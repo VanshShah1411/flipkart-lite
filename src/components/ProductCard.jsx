@@ -11,7 +11,7 @@ const ProductCard = ({ product }) => {
     >
       <div className="p-4 w-full h-60 aspect-w-1 aspect-h-1 bg-white rounded-lg overflow-hidden xl:aspect-w-5 xl:aspect-h-4">
         <img
-          src={product.image}
+          src={product.images}
           alt={product.title}
           className="w-full h-full object-center object-contain group-hover:opacity-75"
         />

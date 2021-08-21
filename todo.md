@@ -78,6 +78,7 @@
 -> orders page / place order (actual design)
 -> placeholder for orders page
 -> buy now working fix
+--> Navbar
 
 ### remaining
 
@@ -88,12 +89,11 @@
 
 ### Kirua Todo
 
--> api (majduri)
+-> api (majduri) - 30 more T.T
 -> Review section
 
 -> Home page
 --> Home page hero section
---> Navbar
 --> second section
 --> products preview (majduri)
 --> tailwind se promo section
@@ -102,4 +102,3 @@
 ### Sidd Todo
 
 --> Home page hero section
---> Navbar

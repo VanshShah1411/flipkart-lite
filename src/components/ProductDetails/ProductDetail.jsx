@@ -15,7 +15,7 @@ const ProductDetail = () => {
 
   const { id } = useParams();
   const currentProduct = products.find((el) => el.id === +id);
-
+  console.log(currentProduct.images[0]);
   return (
     <div>
       {!products.length ? (
@@ -23,7 +23,7 @@ const ProductDetail = () => {
       ) : (
         <>
           <div className="main-container lg:flex container px-4 lg:px-12 pt-10">
-            <ImageContainer image={currentProduct.image} />
+            <ImageContainer images={currentProduct.images} />
             <DetailsContainer currentProduct={currentProduct} />
           </div>
           <RelatedProducts />

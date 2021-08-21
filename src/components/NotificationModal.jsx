@@ -16,8 +16,10 @@ const NotificationModal = ({ message, type }) => {
   }
   const dispatch = useDispatch();
   return (
-    <div className={`rounded-md bg-${color}-50 p-4 absolute top-15 right-5`}>
-      <div className="flex">
+    <div
+      className={`rounded-md bg-${color}-50 p-4 absolute top-15 right-5 animate-wiggle`}
+    >
+      <div className="flex ">
         <div className="flex-shrink-0">
           {type === "success" ? (
             <CheckCircleIcon

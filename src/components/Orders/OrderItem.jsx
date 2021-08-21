@@ -27,7 +27,7 @@ const OrderItem = ({ item, qty }) => {
       </div>
       <div className="w-1/4 lg:w-40 bg-gray-700">
         {/* Image */}
-        <img src={item.image} alt={item.title} />
+        <img src={item.images[0]} alt={item.title} />
       </div>
     </div>
   );
