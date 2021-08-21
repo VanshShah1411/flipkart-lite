@@ -1,7 +1,10 @@
 import React from "react";
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import { addToCart, updateTotal } from "../../actions";
 
 const OrderItem = ({ item, qty }) => {
+  const dispatch = useDispatch();
   return (
     <div className="key={index} flex justify-between items-start border-b-2 py-4 px-4 my-4 shadow-sm rounded-sm mt-2 bg-white">
       <div>
@@ -14,11 +17,18 @@ const OrderItem = ({ item, qty }) => {
         <div>
           <Link
             className="text-blue-700 font-semibold text-sm pr-4 border-r-2 border-gray-400 "
-            to="/"
+            to={`/product/${item.id}`}
           >
             View Product
           </Link>
-          <Link className="text-blue-700 font-semibold text-sm pl-3" to="/">
+          <Link
+            className="text-blue-700 font-semibold text-sm pl-3"
+            to="/checkout"
+            onClick={() => {
+              dispatch(addToCart(item.id));
+              dispatch(updateTotal(item.price));
+            }}
+          >
             Buy Again
           </Link>
         </div>

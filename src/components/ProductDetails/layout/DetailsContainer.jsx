@@ -50,6 +50,10 @@ const DetailsContainer = ({ currentProduct }) => {
           <Link
             to="/checkout"
             className="w-2/6 py-4 text-white text-center rounded-sm shadow-sm bg-indigo-600 hover:bg-indigo-700 flex justify-center items-center"
+            onClick={() => {
+              dispatch(addToCart(currentProduct.id));
+              dispatch(updateTotal(currentProduct.price));
+            }}
           >
             Buy Now
           </Link>

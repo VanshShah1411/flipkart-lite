@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getProducts, closeNotification } from "./actions/index";
 
 import Home from "./components/Home";
-import Navbar from "./components/Navbar";
+import Navbar, { SubNavbar } from "./components/Navbar";
 import SideCart from "./components/Cart/SideCart";
 import ProductDetail from "./components/ProductDetails/ProductDetail";
 import Checkout from "./components/Checkout/Checkout";
@@ -59,7 +59,10 @@ function App() {
         <Route exact path="/product/:id" component={ProductDetail} />
         <Route exact path="/checkout" component={Checkout} />
         <Route exact path="/orders" component={Orders} />
-        <Route exact path="/" component={Home} />
+        <Route exact path="/">
+          <SubNavbar />
+          <Home />
+        </Route>
         <Route exact path="/demo" component={OrderPlaceholder} />
       </Switch>
       <Footer />
