@@ -77,15 +77,29 @@
 -> orders page
 -> orders page / place order (actual design)
 -> placeholder for orders page
+-> buy now working fix
 
 ### remaining
 
--> smooth transitions
+-> size and color button's focus state fix
+-> set md responsive
+-> wishlist (if time remains)
+-> feedback modal transition ( smjh ni aa rha )
 
 ### Kirua Todo
 
--> feedback modal transition ( smjh ni aa rha )
+-> api (majduri)
+-> Review section
+
 -> Home page
--> api
+--> Home page hero section
+--> Navbar
+--> second section
+--> products preview (majduri)
+--> tailwind se promo section
+--> lorem ipsum img
 
 ### Sidd Todo
+
+--> Home page hero section
+--> Navbar

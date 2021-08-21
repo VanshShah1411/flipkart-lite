@@ -44,7 +44,7 @@ const DetailsContainer = ({ currentProduct }) => {
       <ColorOptions />
       <SizeOptions />
 
-      {/* Quantity + Add to cart */}
+      {/* Buy Now + Add to cart */}
       <div className="pb-5 border-b-2 border-gray-200 mb-4">
         <div className="flex justify-center items-center">
           <Link
