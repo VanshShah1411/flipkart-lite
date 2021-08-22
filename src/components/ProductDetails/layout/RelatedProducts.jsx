@@ -14,7 +14,7 @@ const RelatedProducts = () => {
             className="w-full lg:w-1/5 my-3 px-4 py-4 hover:bg-gray-50 cursor-pointer"
           >
             <img
-              className="bg-gray-200 h-2/6 rounded-md"
+              className="bg-gray-200 h-2/6 lg:h-auto rounded-md"
               src="https://fabrx.co/preview/ui-kit-pro-v3/assets/images/placeholders/placeholder-125.png"
               alt="ded"
             />
