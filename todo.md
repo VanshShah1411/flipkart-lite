@@ -90,11 +90,14 @@
 
 -> size and color button's focus state fix
 -> set md responsive
--> stripe integration
 
 ### Kirua Todo
 
---> products preview (majduri)
+--> products preview (majduri) // ded
+
+-> stripe integration
+-> products section pulse fix
+-> logo fix
 
 ### Sidd Todo
 
