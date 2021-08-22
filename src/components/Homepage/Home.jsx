@@ -52,7 +52,7 @@ const Home = () => {
           ))}
         </div>
       </div>
-      <div className="mx-5 flex flex-wrap justify-evenly items-center">
+      <div className="mx-5 lg:mx-20 flex flex-wrap justify-evenly items-center">
         <PromoCard
           color="pink"
           heading="Top Selling Products"
