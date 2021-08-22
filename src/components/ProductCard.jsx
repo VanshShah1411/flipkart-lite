@@ -9,15 +9,17 @@ const ProductCard = ({ product }) => {
       to={`/product/${product.id}`}
       className="group shadow-lg"
     >
-      <div className="p-4 w-full h-60 aspect-w-1 aspect-h-1 bg-white rounded-lg overflow-hidden xl:aspect-w-5 xl:aspect-h-4">
+      <div className="py-8 w-full h-60 bg-white rounded-lg ">
         <img
           src={product.images}
           alt={product.title}
           className="w-full h-full object-center object-contain group-hover:opacity-75"
         />
       </div>
-      <h3 className="mt-4 ml-2 text-lg text-gray-900">{product.title}</h3>
-      <p className="mt-1 ml-2 text-lg font-medium text-gray-900">
+      <h3 className="mt-4 ml-2 text-lg text-gray-900">
+        {product.title.split(" ").slice(0, 3).join(" ") + "..."}
+      </h3>
+      <p className="mt-1 mb-4 ml-2 text-lg font-medium text-gray-900">
         ${product.price}
       </p>
     </Link>

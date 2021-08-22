@@ -2,7 +2,7 @@ import React from "react";
 import { Disclosure, Dialog, Transition } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/solid";
 
-cons24DisclosureContainer = ({ title, desc }) => {
+const DisclosureContainer = ({ title, desc }) => {
   return (
     <div className="pb-5 border-b-2 border-gray-200 mb-4">
       <Disclosure>
