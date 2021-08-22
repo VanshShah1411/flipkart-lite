@@ -25,8 +25,8 @@ export const SubNavbar = () => {
   return (
     <div className="flex justify-center mb-4">
       <ul className="flex flex-wrap justify-center sm:font-small list-style-none">
-        {elems.map((elem) => (
-          <SubNavElems text={elem} />
+        {elems.map((elem, i) => (
+          <SubNavElems key={i} text={elem} />
         ))}
         <li className="hover:text-blue-500 cursor-pointer px-10 my-2">
           Beauty

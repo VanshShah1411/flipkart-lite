@@ -97,10 +97,6 @@ const DetailsContainer = ({ currentProduct }) => {
         title={"Additional Info"}
         desc={currentProduct.description}
       />
-      <DisclosureContainer
-        title={"Reviews"}
-        desc={currentProduct.description}
-      />
     </div>
   );
 };

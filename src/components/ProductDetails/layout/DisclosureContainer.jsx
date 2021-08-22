@@ -2,7 +2,7 @@ import React from "react";
 import { Disclosure, Dialog, Transition } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/solid";
 
-const DisclosureContainer = ({ title, desc }) => {
+cons24DisclosureContainer = ({ title, desc }) => {
   return (
     <div className="pb-5 border-b-2 border-gray-200 mb-4">
       <Disclosure>
@@ -18,11 +18,11 @@ const DisclosureContainer = ({ title, desc }) => {
             </Disclosure.Button>
             <Transition
               enter="transform transition ease-in-out duration-500 sm:duration-700"
-              enterFrom="transform -translate-y-48 opacity-0"
+              enterFrom="transform -translate-y-24 opacity-0"
               enterTo="transform translate-y-0 opacity-1"
               leave="transform transition ease-in-out duration-500 sm:duration-700"
               leaveFrom="transform translate-y-0 opacity-1"
-              leaveTo="transform -translate-y-48 opacity-0"
+              leaveTo="transform -translate-y-24 opacity-0"
             >
               <Disclosure.Panel className="px-4 pt-4 pb-2 text-md tracking-wide text-gray-500">
                 {desc}

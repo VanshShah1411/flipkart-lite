@@ -1,9 +1,12 @@
 import React from "react";
 
+// layouts
 import ImageContainer from "./layout/ImageContainer";
 import DetailsContainer from "./layout/DetailsContainer";
 import RelatedProducts from "./layout/RelatedProducts";
 import ProductDetailsPlaceholder from "./ProductDetailsPlaceholder";
+import Reviews from "./layout/Review/Reviews";
+
 //redux
 import { useSelector } from "react-redux";
 
@@ -27,6 +30,7 @@ const ProductDetail = () => {
             <DetailsContainer currentProduct={currentProduct} />
           </div>
           <RelatedProducts />
+          <Reviews />
         </>
       )}
     </div>

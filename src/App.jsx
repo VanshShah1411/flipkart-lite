@@ -1,11 +1,14 @@
 import React, { useEffect } from "react";
-import { Switch, Route, useLocation } from "react-router-dom";
 import "./App.css";
 
-import { useDispatch, useSelector } from "react-redux";
+// Route
+import { Switch, Route, useLocation } from "react-router-dom";
 
+// Redux
+import { useDispatch, useSelector } from "react-redux";
 import { getProducts, closeNotification } from "./actions/index";
 
+// Copmonents
 import Home from "./components/Home";
 import Navbar, { SubNavbar } from "./components/Navbar";
 import SideCart from "./components/Cart/SideCart";

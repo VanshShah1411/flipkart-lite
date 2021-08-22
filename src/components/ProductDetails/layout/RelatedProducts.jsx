@@ -3,11 +3,11 @@ import { StarIcon } from "@heroicons/react/solid";
 
 const RelatedProducts = () => {
   return (
-    <div className="my-10">
-      <h1 className="mb-4 mx-2 lg:mx-16 pb-4 border-b-2 text-xl tracking-wide font-semibold">
+    <div className="my-10 px-4 lg:px-16">
+      <h1 className="mb-4 mx-2 pb-4  text-xl tracking-wide font-semibold">
         Related Products
       </h1>
-      <div className="flex lg:flex-row lg:px-12 px-6 flex-wrap justify-between items-center">
+      <div className="border-t-2 flex lg:flex-row lg:px-12 px-6 flex-wrap justify-between items-center">
         {[...Array(4)].map((_, i) => (
           <div
             key={i}
