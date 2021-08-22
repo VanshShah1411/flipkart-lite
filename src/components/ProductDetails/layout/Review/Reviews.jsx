@@ -1,5 +1,4 @@
 import React from "react";
-import { StarIcon } from "@heroicons/react/solid";
 import UserReview from "./UserReview";
 import ProgressBarContainer from "./ProgressBarContainer";
 
@@ -20,7 +19,7 @@ const Reviews = () => {
                 {[...Array(4)].map((_, i) => (
                   <i key={i} className="text-yellow-500 fas fa-star"></i>
                 ))}
-                <i class="far fa-star"></i>
+                <i className="far fa-star"></i>
               </div>
               <span className="w-2/4 text-gray-600 ml-2 text-xs font-semibold">
                 Based on 1624 Reviews
@@ -61,5 +60,4 @@ const Reviews = () => {
     </div>
   );
 };
-
 export default Reviews;

@@ -9,7 +9,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { getProducts, closeNotification } from "./actions/index";
 
 // Copmonents
-import Home from "./components/Home";
+import Home from "./components/Homepage/Home";
+import ProductListing from "./components/ProductListing";
 import Navbar, { SubNavbar } from "./components/Navbar";
 import SideCart from "./components/Cart/SideCart";
 import ProductDetail from "./components/ProductDetails/ProductDetail";
@@ -62,11 +63,15 @@ function App() {
         <Route exact path="/product/:id" component={ProductDetail} />
         <Route exact path="/checkout" component={Checkout} />
         <Route exact path="/orders" component={Orders} />
+        <Route exact path="/products">
+          <SubNavbar />
+          <ProductListing />
+        </Route>
+        <Route exact path="/demo" component={OrderPlaceholder} />
         <Route exact path="/">
           <SubNavbar />
           <Home />
         </Route>
-        <Route exact path="/demo" component={OrderPlaceholder} />
       </Switch>
       <Footer />
     </div>

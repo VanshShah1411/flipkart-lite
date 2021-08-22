@@ -18,7 +18,7 @@ const ProductDetail = () => {
 
   const { id } = useParams();
   const currentProduct = products.find((el) => el.id === +id);
-  console.log(currentProduct.images[0]);
+
   return (
     <div>
       {!products.length ? (

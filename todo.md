@@ -79,6 +79,7 @@
 -> placeholder for orders page
 -> buy now working fix
 --> Navbar
+-> Review section
 
 ### remaining
 
@@ -89,16 +90,18 @@
 
 ### Kirua Todo
 
--> api (majduri) - 30 more T.T
--> Review section
+--> Home page hero section
 
 -> Home page
---> Home page hero section
 --> second section
---> products preview (majduri)
 --> tailwind se promo section
 --> lorem ipsum img
 
 ### Sidd Todo
 
---> Home page hero section
+--> products preview (majduri)
+
+### Vansh Todo
+
+-> api (majduri) - 30 more T.T
+--> compress tailwind

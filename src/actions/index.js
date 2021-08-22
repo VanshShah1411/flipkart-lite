@@ -1,7 +1,9 @@
+// import products from "../../assets/data/products.json";
+// console.log(products);
 const getProducts = () => {
   return (dispatch) => {
     // fetch("https://fakestoreapi.com/products")
-    fetch("../../../assets/data/products.json")
+    fetch("../../assets/data/products.json")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

@@ -10,8 +10,10 @@ const Footer = () => {
           <h1 className="text-3xl font-bold text-gray-900">Footer</h1>
           {/* Description */}
           <p className="my-2 text-md tracking-wide font-normal text-gray-600">
-            You may have invaded my mind and my body but there's one thing a
-            saiyan always keep. Its PRIIIIIIIDEEEEEE!!!!
+            Buy something you love. We ship to over 150 countries. We're a
+            global company. We have branches in 13 countries: Canada, Japan,
+            Mexico, Spain, the United States, and more. We're committed to
+            building a better future for all of us.
           </p>
         </div>
         {/* LIST */}

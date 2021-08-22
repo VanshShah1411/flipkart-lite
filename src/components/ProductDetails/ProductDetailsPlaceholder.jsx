@@ -13,6 +13,7 @@ const ProductDetailsPlaceholder = () => {
               <div className={`h-20 mr-4 w-1/4 bg-${color}-400 rounded`}></div>
               <div className={`h-20 mr-4 w-1/4 bg-${color}-400 rounded`}></div>
               <div className={`h-20 mr-4 w-1/4 bg-${color}-400 rounded`}></div>
+              <div className={`h-20 mr-4 w-1/4 bg-${color}-400 rounded`}></div>
             </div>
           </div>
           {/* Right side Details */}

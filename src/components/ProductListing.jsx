@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 import ProductCard from "./ProductCard";
 import ProductCardPlaceHolder from "./ProductCardPlaceHolder";
 
-const Home = () => {
+const ProductListing = () => {
   const products = useSelector((state) => state.products);
 
   return (
@@ -24,4 +24,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default ProductListing;

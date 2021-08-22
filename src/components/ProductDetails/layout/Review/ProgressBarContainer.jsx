@@ -1,7 +1,6 @@
 import React from "react";
 
 const ProgressBar = ({ progressPercentage }) => {
-  console.log(progressPercentage);
   return (
     <div className="h-4 w-full bg-gray-200 rounded-md">
       <div
@@ -22,7 +21,7 @@ const ProgressBarContainer = ({ percent }) => {
       <div className="w-8/12">
         <ProgressBar progressPercentage={`${(4 - percent + 1) * 20}`} />
       </div>
-      <div className="w-1/12">50%</div>
+      <div className="w-1/12">{(4 - percent + 1) * 20}%</div>
     </div>
   );
 };
