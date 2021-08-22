@@ -70,6 +70,11 @@ input[type="number"] {
   z-index: -1;
 }
 
-.second-section-card {
-  background: url("../assets/images/noob.jpg") no-repeat center center/cover;
+.second-section-card img {
+  transition: all 0.5s ease-in-out;
+}
+
+.second-section-card:hover img {
+  transform: scale(1.08);
+  opacity: 0.8;
 }

@@ -41,8 +41,8 @@ const Navbar = () => {
   const dispatch = useDispatch();
 
   return (
-    <header className="text-gray-600 body-font mb-6">
-      <div className="mx-auto bg-indigo-600 text-white flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <header className="text-gray-600 body-font mb-2">
+      <div className="mx-auto bg-indigo-600 text-white flex flex-wrap p-5 pb-0 flex-col md:flex-row items-center">
         <Link
           to="/"
           className=" flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 cursor-pointer"

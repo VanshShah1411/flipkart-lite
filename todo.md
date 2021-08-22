@@ -80,25 +80,24 @@
 -> buy now working fix
 --> Navbar
 -> Review section
+--> Home page hero section
+-> Home page
+--> second section
+--> tailwind se promo section
 
 ### remaining
 
 -> size and color button's focus state fix
 -> set md responsive
--> wishlist (if time remains)
--> feedback modal transition ( smjh ni aa rha )
+-> stripe integration
 
 ### Kirua Todo
 
---> Home page hero section
-
--> Home page
---> second section
---> tailwind se promo section
---> lorem ipsum img
+-> Navbar
 
 ### Sidd Todo
 
+--> lorem ipsum img
 --> products preview (majduri)
 
 ### Vansh Todo
