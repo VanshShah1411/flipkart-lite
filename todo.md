@@ -84,6 +84,7 @@
 -> Home page
 --> second section
 --> tailwind se promo section
+-> Navbar
 
 ### remaining
 
@@ -93,14 +94,12 @@
 
 ### Kirua Todo
 
--> Navbar
+--> products preview (majduri)
 
 ### Sidd Todo
 
 --> lorem ipsum img
---> products preview (majduri)
 
 ### Vansh Todo
 
--> api (majduri) - 30 more T.T
 --> compress tailwind

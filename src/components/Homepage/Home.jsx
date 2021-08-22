@@ -14,7 +14,7 @@ const Home = () => {
     <div className="mb-10">
       <div className="hero-image">
         {/* Image */}
-        <h1 className="text-white text-center text-3xl lg:text-4xl font-semibold">
+        <h1 className="text-white text-center text-3xl lg:text-5xl font-semibold">
           We sell products that fill your life with style.
         </h1>
       </div>
