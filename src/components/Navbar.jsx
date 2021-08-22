@@ -5,7 +5,7 @@ import { toggleCart } from "../actions/index";
 
 const SubNavElems = ({ text }) => {
   return (
-    <li className="border-r-2 hover:text-blue-500 cursor-pointer px-10 my-2">
+    <li className="border-r-2 hover:text-purple-600 cursor-pointer px-10 my-2">
       {text}
     </li>
   );
@@ -20,18 +20,19 @@ export const SubNavbar = () => {
     "Home",
     "Appliances",
     "Travel",
-    "Toys",
   ];
   return (
-    <div className="flex justify-center mb-4">
-      <ul className="flex flex-wrap justify-center sm:font-small list-style-none">
-        {elems.map((elem, i) => (
-          <SubNavElems key={i} text={elem} />
-        ))}
-        <li className="hover:text-blue-500 cursor-pointer px-10 my-2">
-          Beauty
-        </li>
-      </ul>
+    <div className="hidden lg:block md:hidden">
+      <div className="flex justify-center bg-gray-900 text-white">
+        <ul className="flex flex-wrap justify-center sm:font-small list-style-none">
+          {elems.map((elem, i) => (
+            <SubNavElems key={i} text={elem} />
+          ))}
+          <li className="hover:text-blue-500 cursor-pointer px-10 my-2">
+            Beauty
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };
@@ -41,8 +42,8 @@ const Navbar = () => {
   const dispatch = useDispatch();
 
   return (
-    <header className="text-gray-600 body-font mb-2">
-      <div className="mx-auto bg-indigo-600 text-white flex flex-wrap p-5 pb-0 flex-col md:flex-row items-center">
+    <header className="text-gray-600 body-font sticky top-0 z-10 shadow-sm">
+      <div className="mx-auto bg-black text-white flex flex-wrap p-5 pb-0 flex-col md:flex-row items-center">
         <Link
           to="/"
           className=" flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 cursor-pointer"
@@ -59,28 +60,31 @@ const Navbar = () => {
         <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
           <Link
             to="./products"
-            className="mr-5 hover:text-indigo-200 cursor-pointer "
+            className="mr-5 hover:text-indigo-200 cursor-pointer navlinks"
           >
             Products
           </Link>
           <Link
             to="/checkout"
-            className="mr-5 hover:text-indigo-200 cursor-pointer "
+            className="mr-5 hover:text-indigo-200 cursor-pointer  navlinks"
           >
             Checkout
           </Link>
           <Link
             to="/orders"
-            className="mr-5 hover:text-indigo-200 cursor-pointer "
+            className="mr-5 hover:text-indigo-200 cursor-pointer navlinks "
           >
             Previous Orders
           </Link>
-          <Link to="./#" className="mr-5 hover:text-indigo-200 cursor-pointer ">
-            Fourth Link
+          <Link
+            to="/"
+            className="mr-5 hover:text-indigo-200 cursor-pointer  navlinks"
+          >
+            About Us
           </Link>
         </nav>
         <button
-          className="inline-flex items-center border-0 py-2 px-3 focus:outline-none hover:bg-indigo-400 rounded text-base mt-4 md:mt-0"
+          className="inline-flex items-center border-0 py-2 px-3 focus:outline-none bg-gray-700 hover:bg-purple-500 rounded text-base mt-4 md:mt-0"
           onClick={() => dispatch(toggleCart())}
         >
           <svg
@@ -99,6 +103,7 @@ const Navbar = () => {
           </svg>
         </button>
       </div>
+      <SubNavbar />
     </header>
   );
 };

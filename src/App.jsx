@@ -11,7 +11,7 @@ import { getProducts, closeNotification } from "./actions/index";
 // Copmonents
 import Home from "./components/Homepage/Home";
 import ProductListing from "./components/ProductListing";
-import Navbar, { SubNavbar } from "./components/Navbar";
+import Navbar from "./components/Navbar";
 import SideCart from "./components/Cart/SideCart";
 import ProductDetail from "./components/ProductDetails/ProductDetail";
 import Checkout from "./components/Checkout/Checkout";
@@ -64,12 +64,10 @@ function App() {
         <Route exact path="/checkout" component={Checkout} />
         <Route exact path="/orders" component={Orders} />
         <Route exact path="/products">
-          <SubNavbar />
           <ProductListing />
         </Route>
         <Route exact path="/demo" component={OrderPlaceholder} />
         <Route exact path="/">
-          <SubNavbar />
           <Home />
         </Route>
       </Switch>

@@ -84,23 +84,25 @@
 -> Home page
 --> second section
 --> tailwind se promo section
+-> Navbar
 
 ### remaining
 
 -> size and color button's focus state fix
 -> set md responsive
--> stripe integration
 
 ### Kirua Todo
 
--> Navbar
+--> products preview (majduri) // ded
+
+-> stripe integration
+-> products section pulse fix
+-> logo fix
 
 ### Sidd Todo
 
 --> lorem ipsum img
---> products preview (majduri)
 
 ### Vansh Todo
 
--> api (majduri) - 30 more T.T
 --> compress tailwind
