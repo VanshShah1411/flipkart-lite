@@ -13,6 +13,9 @@ module.exports = {
     require("@tailwindcss/forms"),
   ],
   theme: {
+    fontFamily: {
+      poppins: ["poppins"],
+    },
     extend: {
       colors: {
         orange: colors.orange,
