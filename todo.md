@@ -85,6 +85,7 @@
 --> second section
 --> tailwind se promo section
 -> Navbar
+-> products section pulse fix
 
 ### remaining
 
@@ -96,7 +97,6 @@
 --> products preview (majduri) // ded
 
 -> stripe integration
--> products section pulse fix
 -> logo fix
 
 ### Sidd Todo

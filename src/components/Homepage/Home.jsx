@@ -38,7 +38,7 @@ const Home = () => {
             <ProductCard product={product} key={i} />
           ))}
         </div>
-        <EndsIn />
+        {/* <EndsIn /> */}
       </div>
 
       <div className=" my-8 py-8 lg:px-12 rounded-md">
