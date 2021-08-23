@@ -8,28 +8,33 @@ import { useDispatch } from "react-redux";
 import { closeNotification } from "../actions";
 
 const NotificationModal = ({ message, type }) => {
-  let color = "";
+  let colorClassName = "",
+    btnClassName = "";
   if (type === "success") {
-    color = "green";
+    colorClassName = "bg-green-100 text-green-400 ";
+    btnClassName =
+      "bg-green-50 text-green-500 hover:bg-green-100 focus:ring-offset-green-50 focus:ring-green-600";
   } else if (type === "alert") {
-    color = "yellow";
+    colorClassName = "bg-yellow-100 text-yellow-400 ";
+    btnClassName =
+      "bg-yellow-50 text-yellow-500 hover:bg-yellow-100 focus:ring-offset-yellow-50 focus:ring-yellow-600";
   }
 
   const dispatch = useDispatch();
   return (
     <div
-      className={`rounded-md bg-${color}-50 p-4 absolute top-15 right-5 animate-wiggle`}
+      className={`rounded-md ${colorClassName} p-4 absolute top-32 right-5 animate-wiggle`}
     >
       <div className="flex ">
         <div className="flex-shrink-0">
           {type === "success" ? (
             <CheckCircleIcon
-              className={`h-5 w-5 text-${color}-400`}
+              className={`h-5 w-5 ${colorClassName}`}
               aria-hidden="true"
             />
           ) : type === "alert" ? (
             <ExclamationCircleIcon
-              className={`h-5 w-5 text-${color}-400`}
+              className={`h-5 w-5 ${colorClassName}`}
               aria-hidden="true"
             />
           ) : (
@@ -37,13 +42,13 @@ const NotificationModal = ({ message, type }) => {
           )}
         </div>
         <div className="ml-3">
-          <p className={`text-sm font-medium text-${color}-800`}>{message}</p>
+          <p className={`text-sm font-medium ${colorClassName}`}>{message}</p>
         </div>
         <div className="ml-auto pl-3">
           <div className="-mx-1.5 -my-1.5">
             <button
               type="button"
-              className={`inline-flex bg-${color}-50 rounded-md p-1.5 text-${color}-500 hover:bg-${color}-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-${color}-50 focus:ring-${color}-600`}
+              className={`inline-flex rounded-md p-1.5  focus:outline-none focus:ring-2 focus:ring-offset-2 ${btnClassName}`}
               onClick={() => dispatch(closeNotification())}
             >
               <span className="sr-only">Dismiss</span>

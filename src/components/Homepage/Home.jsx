@@ -1,11 +1,11 @@
 import React from "react";
 import OfferStamp from "./OfferStamp";
-import ProductCard from "../ProductCard";
+import ProductCard from "../ProductListing/ProductCard";
 
 import { useSelector } from "react-redux";
 import SecondSection from "./SecondSection";
 import PromoContainer from "./PromoContainer";
-import ProductCardPlaceHolder from "../ProductCardPlaceHolder";
+import ProductCardPlaceHolder from "../ProductListing/ProductCardPlaceHolder";
 import EndsIn from "./EndsIn";
 import PromoCard from "./PromoCard";
 
@@ -15,17 +15,17 @@ const Home = () => {
     {
       image:
         "https://images.pexels.com/photos/1553783/pexels-photo-1553783.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-      title: "Tare zameen par",
+      title: "Buy outstanding products",
     },
     {
       image:
         "https://images.unsplash.com/photo-1491336477066-31156b5e4f35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTk3fHxmYXNoaW9uJTIwbWVufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-      title: "Professional Clothes for noobs",
+      title: "Professional Clothes for you!",
     },
     {
       image:
         "https://images.pexels.com/photos/2866077/pexels-photo-2866077.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-      title: "Rowdy Rathore in college",
+      title: "Full flexing in college",
     },
   ];
   return (

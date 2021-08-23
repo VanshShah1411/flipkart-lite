@@ -8,9 +8,8 @@ import ProductCardPlaceHolder from "./ProductCardPlaceHolder";
 
 const Home = () => {
   const products = useSelector((state) => state.products);
-
   return (
-    <div className=" mx-auto py-16 sm:py-24 ">
+    <div className=" mx-auto py-16 sm:py-24">
       <div className="w-full flex flex-col items-center justify-center md:flex-row md:flex-wrap">
         {products.length
           ? products.map((product, ind) => (

@@ -1,6 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+const FooterLi = ({ href, title }) => {
+  return (
+    <li>
+      <a
+        href={href}
+        target="_blank"
+        className="cursor-pointer hover:text-blue-600"
+      >
+        {title}
+      </a>
+    </li>
+  );
+};
+
 const Footer = () => {
   return (
     <>
@@ -24,12 +38,22 @@ const Footer = () => {
               Products
             </h1>
             <ul className="list-none text-md text-gray-600 tracking-wide leading-relaxed">
-              <li className="cursor-pointer hover:text-blue-600">Kitchen</li>
-              <li className="cursor-pointer hover:text-blue-600">
-                Smart Phone
-              </li>
-              <li className="cursor-pointer hover:text-blue-600">Sunglasses</li>
-              <li className="cursor-pointer hover:text-blue-600">Laptops</li>
+              <FooterLi
+                href="https://www.linkedin.com/in/siddharth-sahu-10/"
+                title="Kitchen"
+              />
+              <FooterLi
+                href="https://github.com/siddharth20190428"
+                title="Smartphone"
+              />
+              <FooterLi
+                href="https://twitter.com/_SiddharthSahu"
+                title="Sunglasses"
+              />
+              <FooterLi
+                href="https://www.instagram.com/_._siddharth_sahu_._/"
+                title="Laptops"
+              />
             </ul>
           </div>
           {/* Features */}
@@ -38,12 +62,19 @@ const Footer = () => {
               Features
             </h1>
             <ul className="list-none text-md text-gray-600 tracking-wide leading-relaxed">
-              <li className="cursor-pointer hover:text-blue-600">Kitchen</li>
-              <li className="cursor-pointer hover:text-blue-600">
-                Smart Phone
-              </li>
-              <li className="cursor-pointer hover:text-blue-600">Sunglasses</li>
-              <li className="cursor-pointer hover:text-blue-600">Laptops</li>
+              <FooterLi
+                href="https://www.linkedin.com/in/vinitpal-singh-0718a3191/"
+                title="Kitchen"
+              />
+              <FooterLi href="https://github.com/Vinitpal" title="Smartphone" />
+              <FooterLi
+                href="https://twitter.com/vinitpal_arora"
+                title="Sunglasses"
+              />
+              <FooterLi
+                href="https://www.instagram.com/vinitpal_arora/"
+                title="Laptops"
+              />
             </ul>
           </div>
           {/* Company */}
@@ -52,12 +83,22 @@ const Footer = () => {
               Company
             </h1>
             <ul className="list-none text-md text-gray-600 tracking-wide leading-relaxed">
-              <li className="cursor-pointer hover:text-blue-600">Kitchen</li>
-              <li className="cursor-pointer hover:text-blue-600">
-                Smart Phone
-              </li>
-              <li className="cursor-pointer hover:text-blue-600">Sunglasses</li>
-              <li className="cursor-pointer hover:text-blue-600">Laptops</li>
+              <FooterLi
+                href="https://github.com/panthchristian"
+                title="Kitchen"
+              />
+              <FooterLi
+                href="https://github.com/panthchristian"
+                title="Smartphone"
+              />
+              <FooterLi
+                href="https://www.linkedin.com/in/vansh-shah-9464a9137/"
+                title="Sunglasses"
+              />
+              <FooterLi
+                href="https://www.linkedin.com/in/vansh-shah-9464a9137/"
+                title="Laptops"
+              />
             </ul>
           </div>
         </div>

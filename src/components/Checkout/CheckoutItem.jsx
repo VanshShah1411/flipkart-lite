@@ -23,7 +23,9 @@ const CheckoutItem = ({ id, qty }) => {
             <Link to={`/product/${id}`} className="font-medium text-gray-600 ">
               {item.title.slice(0, 20) + "..."}
             </Link>
-            <h2 className="font-medium text-700">${item.price * qty}</h2>
+            <h2 className="font-medium text-700">
+              ${(item.price * qty).toFixed(2)}
+            </h2>
           </div>
           <div className="font-medium text-gray-900">
             Quantity: <span className="font-semibold text-gray-700">{qty}</span>

@@ -17,7 +17,7 @@ const BillDetails = ({ cart }) => {
   const total = Number(subtotal + shipping + tax);
 
   const handleOpen = () => {
-    if (address) {
+    if (address.length > 10) {
       setOpen(!open);
     } else {
       dispatch(

@@ -10,7 +10,7 @@ import { getProducts, closeNotification } from "./actions/index";
 
 // Copmonents
 import Home from "./components/Homepage/Home";
-import ProductListing from "./components/ProductListing";
+import ProductListing from "./components/ProductListing/ProductListing";
 import Navbar from "./components/Navbar";
 import SideCart from "./components/Cart/SideCart";
 import ProductDetail from "./components/ProductDetails/ProductDetail";
@@ -51,7 +51,7 @@ function App() {
           <h1 className="hidden">
             {setTimeout(() => {
               dispatch(closeNotification());
-            }, 2000)}
+            }, 200000)}
           </h1>
         </>
       ) : (

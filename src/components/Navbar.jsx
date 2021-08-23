@@ -70,7 +70,7 @@ const Navbar = () => {
             Rowdy Store
           </span>
         </Link>
-        <nav className="hidden lg:block md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex  items-center text-base justify-center">
+        <nav className="hidden lg:flex md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	  items-center text-base justify-center">
           <NavLink to="/products" name="Products" classes={lgLinkClasses} />
           <NavLink to="/checkout" name="Checkout" classes={lgLinkClasses} />
           <NavLink to="/orders" name="Orders" classes={lgLinkClasses} />
