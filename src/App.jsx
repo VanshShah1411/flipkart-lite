@@ -51,7 +51,7 @@ function App() {
           <h1 className="hidden">
             {setTimeout(() => {
               dispatch(closeNotification());
-            }, 200000)}
+            }, 2000)}
           </h1>
         </>
       ) : (

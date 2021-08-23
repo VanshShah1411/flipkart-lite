@@ -35,7 +35,7 @@ const BillDetails = ({ cart }) => {
         <h2 className="w-full flex justify-between text-md font-medium text-gray-500 py-2 border-b-2 border-gray-200">
           Subtotal{" "}
           <span className="font-semibold text-gray-900">
-            ${total.toFixed(2)}
+            ${subtotal.toFixed(2)}
           </span>
         </h2>
         <h2 className="w-full flex justify-between text-md font-medium text-gray-500 py-2 border-b-2 border-gray-200">
