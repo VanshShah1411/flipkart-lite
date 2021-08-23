@@ -38,9 +38,9 @@ export const SubNavbar = () => {
   );
 };
 
-const NavLink = ({ to, name, classes }) => {
+const NavLink = ({ to, name, classes, func }) => {
   return (
-    <Link to={to} className={classes}>
+    <Link to={to} className={classes} onClick={func}>
       {name}
     </Link>
   );
@@ -49,6 +49,7 @@ const NavLink = ({ to, name, classes }) => {
 const Navbar = () => {
   const [toggleNavbar, settoggleNavbar] = useState(false);
   const dispatch = useDispatch();
+  const close = () => settoggleNavbar(!toggleNavbar);
 
   const lgLinkClasses =
     "mr-5 w-1/4 hover:text-indigo-200 cursor-pointer navlinks";
@@ -105,22 +106,33 @@ const Navbar = () => {
         </div>
         <div
           className={`transition-all ease-out duration-500 motion-reduce:transition-none motion-reduce:transform-none lg:hidden ${
-            toggleNavbar ? " h-44" : "opacity-0 h-0"
+            toggleNavbar ? "h-44" : "opacity-0 h-0"
           } w-2/3 mx-auto mt-2`}
         >
-          <div className="flex flex-col items-center transition-all ease-out duration-500  w-full space-y-2 text-center text-md">
+          <div
+            className={`flex flex-col items-center transition-all ease-out duration-500  w-full space-y-2 text-center text-md ${
+              toggleNavbar ? "block" : "hidden"
+            } `}
+          >
             <NavLink
               to="/products"
               name="Products"
               classes={"border-b-2 " + sm}
+              func={close}
             />
             <NavLink
               to="/checkout"
               name="Checkout"
               classes={"border-b-2 " + sm}
+              func={close}
             />
-            <NavLink to="/orders" name="Orders" classes={"border-b-2 " + sm} />
-            <NavLink to="/" name="About" classes={sm} />
+            <NavLink
+              to="/orders"
+              name="Orders"
+              classes={"border-b-2 " + sm}
+              func={close}
+            />
+            <NavLink to="/" name="About" classes={sm} func={close} />
           </div>
         </div>
       </div>

@@ -75,12 +75,12 @@ const Home = () => {
         <PromoCard
           image="https://cdn.discordapp.com/attachments/877090379307028480/879238118639796224/1.png"
           heading="Top Selling Products"
-          headColor="blue-500"
+          headColor="text-blue-500"
         />
         <PromoCard
           image="https://cdn.discordapp.com/attachments/877090379307028480/879238139573587979/2.png"
           heading="Season Sale"
-          headColor="gray-400"
+          headColor="text-gray-400"
         />
       </div>
 
