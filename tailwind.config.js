@@ -1,7 +1,10 @@
 const colors = require("tailwindcss/colors");
 
 module.exports = {
-  purge: [],
+  purge: {
+    enabled: true,
+    content: ["./index.html", "./src/**/*.jsx"],
+  },
   darkMode: "media", // or 'media' or 'class'
 
   variants: {
@@ -21,17 +24,6 @@ module.exports = {
         orange: colors.orange,
       },
       padding: ["hover"],
-      // keyframes: {
-      //   wiggle: {
-      //     "0%": { right: "0", opacity: "0" },
-      //     "90%": { right: "5px", opacity: "1" },
-      //     "100%": { right: "0", opacity: "0" },
-      //   },
-      // },
     },
-    // Make animation stay for more longer
-    // animation: {
-    //   wiggle: "wiggle 0.8s ease-in-out",
-    // },
   },
 };

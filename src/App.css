@@ -29,19 +29,20 @@ input[type="number"] {
   width: 16px;
 }
 
-*::-webkit-scrollbar-track {
-  background: #ffffff;
+body::-webkit-scrollbar-track {
+  background: #1f2937;
 }
 
 *::-webkit-scrollbar-thumb {
   background-color: #c9c9c9;
+  border: 3px solid #1f2937;
   border-radius: 10px;
-  border: 3px solid #ffffff;
 }
 
 .navlinks {
   border-bottom: 2px solid transparent !important;
 }
+
 .navlinks:hover {
   border-bottom: 2px solid white !important;
 }

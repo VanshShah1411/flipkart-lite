@@ -1,5 +1,4 @@
 import React from "react";
-import noob from "../../../assets/images/noob.jpg";
 import OfferStamp from "./OfferStamp";
 import ProductCard from "../ProductCard";
 
@@ -74,11 +73,15 @@ const Home = () => {
       </div>
       <div className="mx-5 lg:mx-20 flex flex-wrap justify-evenly items-center">
         <PromoCard
-          color="pink"
+          image="https://cdn.discordapp.com/attachments/877090379307028480/879238118639796224/1.png"
           heading="Top Selling Products"
           headColor="blue-500"
         />
-        <PromoCard color="red" heading="Season Sale" headColor="gray-400" />
+        <PromoCard
+          image="https://cdn.discordapp.com/attachments/877090379307028480/879238139573587979/2.png"
+          heading="Season Sale"
+          headColor="gray-400"
+        />
       </div>
 
       <div className=" my-8 py-8 lg:px-12 rounded-md">

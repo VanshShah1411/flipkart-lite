@@ -93,10 +93,11 @@
 
 ### remaining
 
-### Kirua Todo
+--> compress tailwind
+--> change hero img to png
+--> replace hero icon to svg
 
---> products preview (majduri) // ded
--> stripe integration
+### Kirua Todo
 
 ### Sidd Todo
 

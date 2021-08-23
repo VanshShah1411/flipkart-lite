@@ -1,21 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const PromoCard = ({ color, heading, headColor }) => {
+const PromoCard = ({ image, heading, headColor }) => {
   return (
-    <div
-      className={`my-8 w-full lg:w-1/3 h-60 flex-col rounded-lg bg-${color}-200`}
-    >
-      <div className="ml-12 w-2/3 lg:w-2/5 h-full flex flex-col justify-evenly font-poppins">
-        <h1 className={`text-lg font-medium text-${headColor}`}>{heading}</h1>
-        <p className="text-lg font-semibold text-black">
-          Lorem ipsum dolor sit amet
-        </p>
+    <div className={`my-8 lg:w-5/12 h-full flex-col rounded-lg relative`}>
+      <img src={image} />
+      <div className="ml-8 py-4 w-48 lg:w-1/2 h-full flex flex-col text-sm lg:text-md font-poppins justify-evenly items-start absolute top-0 promo-details">
+        <h1 className={`font-bold text-${headColor}`}>{heading}</h1>
+        <p className="font-semibold text-black">Lorem ipsum dolor sit amet</p>
         <Link
           to="/products"
-          className="px-10 py-4 bg-black text-white rounded-2xl"
+          className="px-4 lg:px-10 text-center py-2 lg:py-4 bg-black text-white rounded-xl hover:bg-gray-900"
         >
-          Shop now {">"}
+          Shop now <i className="fa-solid fa-chevron-right"></i>
         </Link>
       </div>
     </div>

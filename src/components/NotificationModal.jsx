@@ -14,6 +14,7 @@ const NotificationModal = ({ message, type }) => {
   } else if (type === "alert") {
     color = "yellow";
   }
+
   const dispatch = useDispatch();
   return (
     <div
