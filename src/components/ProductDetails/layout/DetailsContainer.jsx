@@ -49,7 +49,7 @@ const DetailsContainer = ({ currentProduct }) => {
         <div className="flex justify-center items-center">
           <Link
             to="/checkout"
-            className="w-2/6 py-4 text-white text-center rounded-sm md:rounded-md lg:rounded-md shadow-sm bg-indigo-600 hover:bg-indigo-700 flex justify-center items-center"
+            className="w-2/6 py-4 text-white text-center rounded-lg shadow-sm bg-indigo-600 hover:bg-indigo-700 flex justify-center items-center"
             onClick={() => {
               dispatch(addToCart(currentProduct.id));
               dispatch(updateTotal(currentProduct.price));
@@ -58,7 +58,7 @@ const DetailsContainer = ({ currentProduct }) => {
             Buy Now
           </Link>
           <button
-            className="w-4/6 ml-5 py-4 text-white text-center rounded-sm md:rounded-md lg:rounded-md shadow-sm bg-black hover:bg-gray-700 flex justify-center items-center"
+            className="w-4/6 ml-5 py-4 text-white text-center rounded-lg shadow-sm bg-black hover:bg-gray-700 flex justify-center items-center"
             onClick={() => {
               dispatch(addToCart(currentProduct.id));
               dispatch(updateTotal(currentProduct.price));
