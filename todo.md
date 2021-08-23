@@ -85,21 +85,19 @@
 --> second section
 --> tailwind se promo section
 -> Navbar
+-> products section pulse fix
+-> products section pulse fix
+--> lorem ipsum img
+-> logo fix
+-> set md responsive
 
 ### remaining
 
--> size and color button's focus state fix
--> set md responsive
-
 ### Kirua Todo
 
--> products section pulse fix
--> logo fix
+--> products preview (majduri) // ded
+-> stripe integration
 
 ### Sidd Todo
 
---> lorem ipsum img
-
 ### Vansh Todo
-
---> compress tailwind

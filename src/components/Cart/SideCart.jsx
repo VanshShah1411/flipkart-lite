@@ -125,7 +125,7 @@ const SideCart = () => {
                       <p>
                         or{" "}
                         <Link
-                          to="/"
+                          to="/products"
                           type="button"
                           className="text-indigo-600 font-medium hover:text-indigo-500"
                           onClick={() => dispatch(toggleCart())}

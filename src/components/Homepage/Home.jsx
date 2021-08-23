@@ -7,6 +7,8 @@ import { useSelector } from "react-redux";
 import SecondSection from "./SecondSection";
 import PromoContainer from "./PromoContainer";
 import ProductCardPlaceHolder from "../ProductCardPlaceHolder";
+import EndsIn from "./EndsIn";
+import PromoCard from "./PromoCard";
 
 const Home = () => {
   const products = useSelector((state) => state.products);
@@ -40,6 +42,7 @@ const Home = () => {
           <SecondSection key={i} title={item.title} image={item.image} />
         ))}
       </div>
+
       <div>
         <OfferStamp
           sale="Todays Offer"
@@ -55,8 +58,9 @@ const Home = () => {
                 <ProductCardPlaceHolder key={ind} />
               ))}
         </div>
+        {/* <EndsIn /> */}
       </div>
-      {/* Ends in xyz */}
+
       <div className=" my-8 py-8 lg:px-12 rounded-md">
         {/* Recent Search */}
         <h1 className="ml-4 mb-4 text-3xl lg:text-4xl font-bold">
@@ -68,6 +72,15 @@ const Home = () => {
           ))}
         </div>
       </div>
+      <div className="mx-5 lg:mx-20 flex flex-wrap justify-evenly items-center">
+        <PromoCard
+          color="pink"
+          heading="Top Selling Products"
+          headColor="blue-500"
+        />
+        <PromoCard color="red" heading="Season Sale" headColor="gray-400" />
+      </div>
+
       <div className=" my-8 py-8 lg:px-12 rounded-md">
         {/* Recommended */}
         <h1 className="ml-4 mb-4 text-3xl lg:text-4xl font-bold">
@@ -83,6 +96,7 @@ const Home = () => {
               ))}
         </div>
       </div>
+
       <div className=" mt-8 py-8 lg:px-12 rounded-md">
         {/* Most Popular */}
         <h1 className="ml-4 mb-4 text-3xl lg:text-4xl font-bold">
@@ -98,9 +112,11 @@ const Home = () => {
               ))}
         </div>
       </div>
+
       <div className="mb-16">
         <PromoContainer />
       </div>
+
       {/* Another sale */}
       <div>
         <OfferStamp sale="Recommended" offer="35" desc="You may like" />
