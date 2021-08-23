@@ -7,7 +7,7 @@ const RelatedProducts = () => {
       <h1 className="mb-4 mx-2 pb-4  text-xl tracking-wide font-semibold">
         Related Products
       </h1>
-      <div className="border-t-2 flex lg:flex-row lg:px-12 px-6 flex-wrap justify-between items-center">
+      <div className="border-t-2 flex flex-col md:flex-row lg:flex-row lg:px-12 px-6   justify-between items-center">
         {[...Array(4)].map((_, i) => (
           <div
             key={i}

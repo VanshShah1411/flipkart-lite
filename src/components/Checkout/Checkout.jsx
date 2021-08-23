@@ -21,7 +21,7 @@ const Checkout = () => {
   return (
     <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start px-10">
       {/* Cart Items Container */}
-      <div className="w-full lg:overflow-y-auto px-2 my-2 cart-container">
+      <div className="w-full lg:overflow-y-auto md:overflow-y-auto px-2 my-2 cart-container">
         {products.length
           ? cart.map((item) => (
               <CheckoutItem id={item.id} qty={item.qty} key={item.id} />

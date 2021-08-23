@@ -93,9 +93,6 @@
 
 ### Kirua Todo
 
---> products preview (majduri) // ded
-
--> stripe integration
 -> products section pulse fix
 -> logo fix
 

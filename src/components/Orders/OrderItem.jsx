@@ -7,10 +7,10 @@ const OrderItem = ({ item, qty }) => {
   const dispatch = useDispatch();
   return (
     <div className="key={index} flex justify-between items-start border-b-2 py-4 px-4 my-4 shadow-sm rounded-sm mt-2 bg-white">
-      <div>
+      <div className="w-1/2">
         {/* Title */}
         <h1 className="font-semibold">{item.title}</h1>
-        {/* lg:price */}
+        {/* price */}
         <p className="font-semibold">${item.price}</p>
         <p className="font-medium">Quantity : {qty}</p>
         {/* Btns -> view product | buy again */}

@@ -22,7 +22,7 @@ export const SubNavbar = () => {
     "Travel",
   ];
   return (
-    <div className="hidden lg:block md:hidden">
+    <div className="hidden lg:block  md:hidden">
       <div className="flex justify-center bg-gray-900 text-white">
         <ul className="flex flex-wrap justify-center sm:font-small list-style-none">
           {elems.map((elem, i) => (
@@ -50,37 +50,37 @@ const Navbar = () => {
         >
           <img
             className="rounded-full w-10"
-            src="https://cdn.discordapp.com/attachments/753151975570276352/753853919427428352/pika.webp"
+            src="https://cdn.discordapp.com/attachments/877090379307028480/879236481489715220/LogoMakr-9ARqEe.png"
             alt="logo"
           />
           <span className="ml-3 text-xl text-white hover:text-indigo-200">
-            FlipCart Lite
+            Rowdy Store
           </span>
         </Link>
-        <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+        <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex  items-center text-base justify-center">
           <Link
-            to="./products"
-            className="mr-5 hover:text-indigo-200 cursor-pointer navlinks"
+            to="/products"
+            className=" mr-5 w-1/4 hover:text-indigo-200 cursor-pointer navlinks"
           >
             Products
           </Link>
           <Link
             to="/checkout"
-            className="mr-5 hover:text-indigo-200 cursor-pointer  navlinks"
+            className=" mr-5 w-1/4 hover:text-indigo-200 cursor-pointer  navlinks"
           >
             Checkout
           </Link>
           <Link
             to="/orders"
-            className="mr-5 hover:text-indigo-200 cursor-pointer navlinks "
+            className=" mr-5 w-1/4 hover:text-indigo-200 cursor-pointer navlinks "
           >
-            Previous Orders
+            Orders
           </Link>
           <Link
             to="/"
-            className="mr-5 hover:text-indigo-200 cursor-pointer  navlinks"
+            className=" mr-5 w-1/4 hover:text-indigo-200 cursor-pointer  navlinks"
           >
-            About Us
+            About
           </Link>
         </nav>
         <button
