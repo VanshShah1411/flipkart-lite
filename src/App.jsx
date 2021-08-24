@@ -19,6 +19,7 @@ import Footer from "./components/Footer";
 import Orders from "./components/Orders/Orders";
 import NotificationModal from "./components/NotificationModal";
 import OrderPlaceholder from "./components/Orders/OrderPlaceholder";
+import FourOFour from "./components/FourOFour";
 
 function App() {
   const notification = useSelector((state) => state.notification);
@@ -66,10 +67,10 @@ function App() {
         <Route exact path="/products">
           <ProductListing />
         </Route>
-        <Route exact path="/demo" component={OrderPlaceholder} />
         <Route exact path="/">
           <Home />
         </Route>
+        <Route component={FourOFour} />
       </Switch>
       <Footer />
     </div>
