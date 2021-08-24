@@ -1,5 +1,7 @@
 import React from "react";
 
+import FourOFour from "../FourOFour";
+
 // layouts
 import ImageContainer from "./layout/ImageContainer";
 import DetailsContainer from "./layout/DetailsContainer";
@@ -18,6 +20,10 @@ const ProductDetail = () => {
 
   const { id } = useParams();
   const currentProduct = products.find((el) => el.id === +id);
+
+  if (id > 50) {
+    return <FourOFour />;
+  }
 
   return (
     <div>
